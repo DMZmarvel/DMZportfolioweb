@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+:root {
+
+  --AQUA--:rgb(7, 252, 252);
+  --BLACK--: hsl(0, 0%, 3%);
+  --GRAY--: #333333;
+  --WHITE--:#ffffff;
+ 
+ 
+  --body-font: 'Space Grotesk', sans-serif ;
+  --biggest-font-size: 2.375rem;
+  --semi-biggest--: 1.900rem;
+  --normal-font-size: .938rem;
+  --smaller-font-size: .75rem;
+  --my-font-size:1.5em;
+ }
+ 
+ @media screen  and (min-width: 1024px){
+   :root {
+           --biggest-font-size: 5rem;
+           --normal-font-size: 1rem;
+           --smaller-font-size: .813rem;
+       }
+   }
+
+
+   *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  } 
+
+  .Contacts{
+    height: 140vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--BLACK--);
+
+}
+.Contacts .insidecontact{
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.05);
+    width: 95%;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    
+}
+
+  .insidecontact .locate{
+    width: 40%;
+    height: 90%;
+   align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+  
+    padding: 1em 1em;
+    transition: 1s ease-in-out;
+  }
+  .insidecontact .locate:hover{
+    color: var(--AQUA--);
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 0em;
+    border-top-left-radius: 2em;
+  }
+
+ .locate h1{
+    font-size: var(--my-font-size);
+    color: var(--WHITE--);
+    font-family: var(--body-font);
+    text-align: left;
+    padding: 1em 0;
+ }
+ .locate .p1{
+    max-width: 90%;
+    height: 20%;
+    display:inline-flex;
+    text-align: justify;
+    font-family: var(--body-font);
+    font-size: var(--smaller-font-size);
+    color: var(--WHITE--);
+ }
+ .locate .contact11{
+    height: 10%;
+    width: 50%;
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  .contact11 a .icons{
+    font-size: 1.7em;
+    color: var(--AQUA--);
+  }
+  .contact11 a .icons:hover{
+    color: var(--WHITE--);
+  }
+  
+  .contact11 p{
+    font-size: var(--smaller-font-size);
+    font-family: var(--body-font);
+    font-weight: 100;
+    color: var(--WHITE--);
+    text-align: left;
+  }
+  .locate .upfollow{
+    width: 90%;
+     height: 30%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+  }
+  .upfollow p{
+    font-size: var(--smaller-font-size);
+    color: var(--WHITE--);
+    font-family: var(--body-font);
+  }
+.upfollow .contact22{
+    width: 90%;
+    height: 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+ 
+   gap: 1em;
+  }
+  
+  
+  .contact22 a .icons{
+    font-size: 2em;
+    padding: 0.2em;
+    color: var(--AQUA--);
+    border-top-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+    border: 1px solid var(--AQUA--);
+    transition: 1s ease;
+  }
+  .contact22 a .icons:hover{
+    color: var(--WHITE--);
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-top-left-radius: 2em;
+  }
+
+
+
+
+
+
+
+
+
+
+  .insidecontact .informs{
+    width: 40%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .informs form{
+    width: 90%;
+    height: 95%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+   
+   
+  }
+  form .name{
+    width: 90%;
+    height: 13%;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-family: var(--body-font);
+    font-size: var(--smaller-font-size);
+    text-align: left;
+    font-weight: 500;
+    padding: 0 1em;
+    color: var(--WHITE--);
+   margin-bottom: 1em;
+    border: 2px solid var(--AQUA--);
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+  }
+  form .email{
+    width: 90%;
+    height: 13%;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-family: var(--body-font);
+    font-size: var(--smaller-font-size);
+    text-align: left;
+    font-weight: 500;
+    padding: 0 1em;
+    color: var(--WHITE--);
+   margin: 0em 0 1em 0;
+    border: 2px solid var(--AQUA--);
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+  }
+  form textarea{
+    width: 90%;
+    max-width: 90%;
+    height: 40%;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-family: var(--body-font);
+    font-size: var(--smaller-font-size);
+    text-align: left;
+    font-weight: 500;
+    padding: 0 1em;
+    color: var(--WHITE--);
+    margin-bottom: 1em;
+    padding: 1em 1em;
+    border: 2px solid var(--AQUA--);
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+  }
+  form .message{
+    width: 50%;
+    height: 10%;
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border: 1px solid var(--AQUA--);
+    color: var(--WHITE--);
+    font-size: var(--smaller-font-size);
+    font-family: var(--body-font);
+    background: transparent;
+    transition: 1s ease;
+  }
+  
+    form .message:hover{
+      color: var(--AQUA--);
+      border-top-right-radius: 2em;
+      border-bottom-left-radius: 0em;
+      border-top-left-radius: 2em;
+    }
+  
+  form label{
+    font-family: var(--body-font);
+    font-size: var(--smaller-font-size);
+    color: var(--AQUA--);
+  }
+
+
+
+.status{
+  width: 39%;
+  height: 10%;
+ 
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+
+.error{
+  color: red;
+}
+.success{
+  color: green;
+}
+
+
+
+
+
+
+
+
+.Contacts .mymap{
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.05);
+    width: 95%;
+    height: 40%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    margin-top: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*   
+ 
+ 
+ const [message, setMessage] = useState("");
+         const [status, setStatus] = useState("");
+
+         const sendMessage = async () => {
+
+          setStatus("");
+
+          if (!message.trim()) {
+            status("Please enter a message.")
+          }
+           try {
+                await new Promise((resolve, reject) => {
+                   setTimeout(() => {
+                    const hasNetwork = Math.random() > 0.5;
+                    hasNetwork ? resolve() : reject(new Error("No network"));
+                   }, 1000);
+                });
+
+           setStatus("Message sent successfully!");
+           setMessage("");
+           } catch (error) {
+             setStatus(error.message);
+
+             value={message} onChange={(e) => setMessage(e.target.value)}
+           }*/
+
+
+
+
+
+
+
+
+
+
+
+  /*.informs .nemail{
+    width: 90%;
+    height: 20%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    
+  }
+  .nemail #name{
+    width: 45%;
+    height: 60%;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-family: var(--body-font);
+    font-size: var(--smaller-font-size);
+    text-align: left;
+    font-weight: 500;
+    padding: 0 1em;
+    color: var(--WHITE--);
+    border-bottom: 2px solid var(--AQUA--);
+    border-top: 2px solid var(--AQUA--);
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+  }
+  
+  .nemail #email{
+    width: 45%;
+    height: 60%;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-family: var(--body-font);
+    font-size: var(--smaller-font-size);
+    text-align: left;
+    font-weight: 500;
+    padding: 0 1em;
+    color: var(--WHITE--);
+    border-bottom: 2px solid var(--AQUA--);
+    border-top: 2px solid var(--AQUA--);
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+  }
+ .informs #Subjects{
+    width: 90%;
+    height: 13%;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-family: var(--body-font);
+    font-size: var(--smaller-font-size);
+    text-align: left;
+    font-weight: 500;
+    padding: 0 1em;
+    color: var(--WHITE--);
+    border-bottom: 2px solid var(--AQUA--);
+    border-top: 2px solid var(--AQUA--);
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+  }
+ 
+ .informs #Message{
+  width: 90%;
+    max-width: 90%;
+    height: 40%;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-family: var(--body-font);
+    font-size: var(--smaller-font-size);
+    text-align: left;
+    font-weight: 500;
+    padding: 0 1em;
+    color: var(--WHITE--);
+    border-bottom: 2px solid var(--AQUA--);
+    border-top: 2px solid var(--AQUA--);
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+  }
+
+  .informs button{
+  width: 50%;
+  height: 10%;
+  border-top-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+  border: 1px solid var(--AQUA--);
+  color: var(--WHITE--);
+  font-size: var(--smaller-font-size);
+  font-family: var(--body-font);
+  background: transparent;
+  transition: 1s ease;
+  }
+  .informs button:hover{
+    color: var(--AQUA--);
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 0em;
+    border-top-left-radius: 2em;
+  }
+
+*/
+
+
+
+  .cottt{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    left: 2%;
+    top: 5%;
+    background-color: var(--AQUA--);
+    position: absolute;
+  }
+  .cot000{
+    background-color: var(--WHITE--);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+  top: 25%;
+    right: 9%;
+    border-radius: 50%;
+  }
+  
+  .cot0001{
+    background-color: var(--WHITE--);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 45%;
+    border-radius: 50%;
+  }
+  .cot00011{
+    background-color: var(--AQUA--);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 65%;
+    left: 10%;
+    border-radius: 50%;
+  }
+  .cot111{
+    background-color: var(--AQUA--);
+    position: absolute;
+    width: 40px;
+    height: 40px;
+   top: 90%;
+    right:  2%;
+    border-radius: 50%;
+  }
+  
+
+
+  @media  (max-width:500px) {
+    .Contacts{
+      height: 170vh;
+    }
+    .Contacts .insidecontact{
+      height: 95%;
+      flex-direction: column;
+      gap: 1em;
+    }
+    .insidecontact .locate{
+      width: 95%;
+      height: 45%;
+
+      gap: 0.6em;
+      padding: 0 0 0 0 ;
+    }
+     .locate h1{
+       padding: 0 0;
+     }
+     .locate .p1{
+      width: 80%;
+     }
+     .locate .contact11{
+      width: 80%;
+     }
+     .locate .upfollow{
+      height: 20%;
+      width: 80%;
+      gap: 0.4em;
+     }
+     .upfollow p{
+      font-size: var(--smaller-font-size);
+     }
+
+    .insidecontact .informs{
+      width: 95%;
+      height: 45%;
+      border-top-left-radius: 2em;
+      border-bottom-right-radius: 2em;
+      border-bottom-left-radius: 2em;
+      border: 2px solid var(--AQUA--);
+    }
+    .cot111{
+      right: 10%;
+    }
+  }
+
+
+  @media  (min-width:501px) and (max-width:900px){
+
+    .Contacts{
+      height: 160vh;
+    }
+    .Contacts .insidecontact{
+      height: 95%;
+      flex-direction: column;
+      gap: 1em;
+    }
+    .insidecontact .locate{
+      width: 95%;
+      height: 50%;
+      border: none;
+      border-left: 2px solid var(--AQUA--);
+      gap: 0.6em;
+      padding: 0 0 0 0 ;
+    }
+     .locate h1{
+       padding: 0 0;
+     }
+     .locate .p1{
+      width: 80%;
+     }
+     .locate .contact11{
+      width: 80%;
+     }
+     .locate .upfollow{
+      height: 20%;
+      width: 80%;
+      gap: 0.4em;
+     }
+     .upfollow p{
+      font-size: var(--smaller-font-size);
+     }
+
+
+
+
+
+
+
+
+
+
+
+    .insidecontact .informs{
+      width: 95%;
+      height: 45%;
+      border-top-color: transparent;
+      border-top-left-radius: 2em;
+      border-bottom-right-radius: 2em;
+      border-bottom-left-radius: 2em;
+      border-right: 2px solid var(--AQUA--);
+      
+    }
+
+
+
+    
+  }

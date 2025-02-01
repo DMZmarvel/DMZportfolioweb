@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+:root {
+
+  --AQUA--:rgb(7, 252, 252);
+  --BLACK--: hsl(0, 0%, 3%);
+  --GRAY--: #333333;
+  --WHITE--:#ffffff;
+ 
+ 
+  --body-font: 'Space Grotesk', sans-serif ;
+  --biggest-font-size: 2.375rem;
+  --semi-biggest--: 1.900rem;
+  --normal-font-size: .938rem;
+  --smaller-font-size: .75rem;
+  --my-font-size:1.5em;
+ }
+ 
+ @media screen  and (min-width: 1024px){
+   :root {
+           --biggest-font-size: 5rem;
+           --normal-font-size: 1rem;
+           --smaller-font-size: .813rem;
+       }
+   }
+
+
+   *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  } 
+
+.main-About{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--BLACK--);
+    position: relative;
+   
+}
+.About{
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.05);
+    width: 95%;
+    height: 87%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    
+}
+.About .first-about{
+    width: 35%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.first-about .my-pics{
+  width: 90%;
+  height: 60%;
+  border-top-left-radius: 2em;
+     border-bottom-right-radius: 2em;
+     border-bottom-left-radius: 2em;
+     border: 1px solid var(--AQUA--);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image:url(../../../public/image/IMG_20240702_220919_784.jpg) ;
+}
+
+.first-about .my-text1{
+    width: 100%;
+    height: 40%;
+    padding: 1em 1.7em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.my-text1 .FName{
+  width: 60%;
+  height: 2em;
+  border-bottom: 2px solid var(--AQUA--);
+      border-radius: 0;
+   font-size: var(--normal-font-size);
+   color: var(--WHITE--);
+   display: flex;
+   border-left: none;
+   border-right: none;
+   border-top: none;
+   align-items: center;
+   justify-content:left;
+
+}
+
+
+.About .first-about1{
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+    
+}
+.first-about1 .bold{
+  font-family: var(--body-font);
+  font-size: var(--semi-biggest--);
+  color: var(--WHITE--);
+}
+.first-about1 .Mintro{
+  width: 75%;
+  height: auto;
+  display: flex;
+   
+
+}
+.Mintro .intro{
+  font-family: var(--body-font);
+  font-size: var(--smaller-font-size);
+  color: var(--WHITE--);
+  text-align: justify;
+}
+.intro span{
+  color: var(--AQUA--);
+  
+}
+
+
+.first-about1 .experties {
+  width: 75%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+
+}
+.experties .expt{
+  font-family: var(--body-font);
+  font-size: var(--semi-biggest--);
+  color: var(--WHITE--);
+}
+.experties .exptins{
+  display: flex;
+  gap: 0.7em;
+  width: 100%;
+  height: auto;
+}
+.exptins .tin{
+   width: 20%;
+   height: 2em;
+   border-bottom: 2px solid var(--AQUA--);
+   border-radius: 0;
+   font-family: var(--body-font);
+   color: var(--WHITE--);
+   font-size: 0.8em;
+   display: flex;
+   border-left: none;
+   border-right: none;
+   border-top: none;
+   align-items: center;
+   justify-content: center;
+   border-radius: 0;
+}
+
+.first-about1 .hubbies{
+    width: 88%;
+    height:40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.7em;
+
+}
+.hubbies .hub{
+  font-family: var(--body-font);
+  font-size: var(--semi-biggest--);
+  color: var(--WHITE--);
+  align-self: center;
+}
+.hubbies p{
+  font-size: var(--smaller-font-size);
+  font-family: var(--body-font);
+  color: var(--WHITE--);
+  
+}
+
+.hubbies p span{
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  color: var(--AQUA--);
+}
+
+.dottt{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    left: 2%;
+    top: 5%;
+    background-color: var(--AQUA--);
+    position: absolute;
+  }
+  .dot000{
+    background-color: var(--WHITE--);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 24%;
+    right: 9%;
+    border-radius: 50%;
+  }
+  
+  .dot0001{
+    background-color: var(--WHITE--);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 47%;
+    left: 20%;
+    border-radius: 50%;
+  }
+  .dot00011{
+    background-color: var(--AQUA--);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 69%;
+    left: 20%;
+    border-radius: 50%;
+  }
+  .dot111{
+    background-color: var(--AQUA--);
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 90%;
+    right:  2%;
+    border-radius: 50%;
+  }
+  
+  
+
+
+  @media  (max-width:600px) {
+    .main-About{
+      height: 210vh;
+      width: 100%;
+      
+    }
+
+    .main-About .About{
+      flex-direction: column;
+      height: 95%;
+    }
+    .About .first-about{
+      width: 90%;
+      height: 40%;
+     gap: 1em;
+    }
+    .first-about .my-pics{
+      width: 100%;
+      height: 50%;
+      background-size: cover;
+      border-top-left-radius: 2em;
+      border-bottom-right-radius: 2em;
+      
+      border: 1px solid var(--AQUA--);
+    }
+
+    .About .first-about1{
+      width: 90%;
+      height: 50%;
+    }
+
+    .first-about1 .Mintro{
+      height: 25%;
+      width: 90%;
+    }
+    .first-about .my-text1{
+      gap: 0.8em;
+      padding: 1em 0em;
+      height: 30%;
+      
+    }
+    .my-text1 .FName{
+     
+      
+      border-bottom: 2px solid var(--AQUA--);
+      font-size: 0.8em;
+      justify-content: left;
+      height: 15%;
+      padding: 0 0.5em;
+      width: 75%;
+    }
+   .About .first-about1{
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+    
+   }
+   .first-about1 .bold{
+    
+       font-size: var(--my-font-size);
+  
+   }
+
+   
+   .first-about1 .experties {
+       width: 100%;
+       height: 40%;
+       gap: 0.7em;
+   }
+
+   .experties .expt{
+  
+   font-size: var(--my-font-size);
+  
+  }
+  .experties .exptins{
+    display: grid;
+    height: 80%;
+    grid-template-columns: 1fr  ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+   
+    gap: 0.4em;
+    width: 100%;
+    padding: 0.3em 0.3em;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .exptins .tin{
+    width: 40%;
+    border-bottom: 2px solid var(--AQUA--);
+    font-size: var(--smaller-font-size);
+    padding: 0 0.5em;
+    justify-content: left;
+  }
+
+  .first-about1 .hubbies{
+    gap: 0.7em;
+    width: 100%;
+  }
+  .hubbies .hub{
+    
+    font-size: var(--my-font-size);
+   
+  }
+  .hubbies p{
+   text-align: center;
+    
+   
+  }
+  .dottt{
+    bottom: -105%;
+  }
+  
+  .dot000{
+    bottom: -154%;
+    right: 3%;
+  }
+  .dot0001{
+    bottom: -204%;
+    left: 20%;
+  }
+
+  .dot111{
+    bottom: -60%;
+  }
+
+  }
+
+
+
+
+
+
+
+
+
+
+  @media  (min-width:601px) and (max-width:900px){
+
+    .main-About{
+      height: 150vh;
+      width: 100%;
+  
+    }
+
+    .main-About .About{
+      flex-direction: column;
+      height: 95%;
+      gap: 1em;
+
+    }
+    .About .first-about{
+      width: 100%;
+      height: 25%;
+      display: flex;
+      flex-direction: row;
+     gap: 1em;
+    }
+    .first-about .my-pics{
+      width: 45%;
+      height: 100%;
+      background-size: cover;
+      border-top-left-radius: 2em;
+      border-bottom-right-radius: 2em;
+      border-bottom-left-radius: 2em;
+      border: 1px solid var(--AQUA--);
+    }
+
+    
+    .first-about .my-text1{
+      width: 45%;
+      height: 100%;
+      gap: 1em;
+      padding: 1em 1em;
+      height: 100%;
+     align-items: center;
+     justify-content: center;
+     border-top-left-radius: 2em;
+     border-bottom-right-radius: 2em;
+     border-bottom-left-radius: 2em;
+     border: 1px solid var(--AQUA--);
+    }
+    .my-text1 .FName{
+      border-bottom: 2px solid var(--AQUA--);
+      border-radius: 0;
+      justify-content: left;
+      width: 100%;
+      height: 2em;
+      font-size: var(--normal-font-size);
+      padding: 0.5em 0.5em;
+    }
+   .About .first-about1{
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+    gap: 1.4em;
+   
+   }
+   .first-about1 .bold{
+      justify-self: start;
+       align-self: flex-start;
+       font-size: var(--my-font-size);
+       padding: 0 1em;
+   }
+   .first-about1 .Mintro{
+    height: 25%;
+   }
+   .Mintro .intro{
+    font-size: 1.2em;
+   }
+   .first-about1 .experties {
+       width: 100%;
+       height: 35%;
+       gap: 0.7em;
+   }
+
+   .experties .expt{
+      font-size: var(--my-font-size);
+  
+      align-self: flex-start;
+      padding: 0 20%;
+  }
+  .experties .exptins{
+    flex-direction: column;
+    gap: 0.4em;
+    width: 100%;
+    padding: 0.3em 0.3em;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .exptins .tin{
+    width: 60%;
+    border-bottom: 2px solid var(--AQUA--);
+    border-radius: 0;
+    
+    font-size: 1.2em;
+
+
+   
+  
+  }
+
+  .first-about1 .hubbies{
+    gap: 0.7em;
+    width: 100%;
+    height: 40%;
+  }
+  .hubbies .hub{
+   
+    font-size: var(--my-font-size);
+  
+  }
+  .hubbies p{
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  }

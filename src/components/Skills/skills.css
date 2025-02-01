@@ -1,0 +1,811 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+:root {
+
+  --AQUA--:rgb(7, 252, 252);
+  --BLACK--: hsl(0, 0%, 3%);
+  --GRAY--: #333333;
+  --WHITE--:#ffffff;
+ 
+ 
+  --body-font: 'Space Grotesk', sans-serif ;
+  --biggest-font-size: 2.375rem;
+  --semi-biggest--: 2.001rem;
+  --normal-font-size: .938rem;
+  --smaller-font-size: .75rem;
+  --my-font-size:1.5em;
+ }
+ 
+ @media screen  and (min-width: 1024px){
+   :root {
+           --biggest-font-size: 5rem;
+           --normal-font-size: 1rem;
+           --smaller-font-size: .813rem;
+       }
+   }
+
+
+   *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  } 
+
+
+.skillhold{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--BLACK--);
+    position: relative;
+   
+}
+.skillhold .holdskillevery{
+    width: 95%;
+    height: 95%;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    border-radius: 10px;
+
+}
+.holdskillevery .softskill{
+    font-size: var(--semi-biggest--);
+    font-family: var(--body-font);
+    color: var(--WHITE--);
+}
+
+.holdskillevery .fourskill{
+    width: 93%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   gap: 1em;
+}
+
+
+
+.fourskill .four1{
+    width: 20em;
+    height: 18em;
+    border: 1px solid var(--AQUA--);  
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.four1 .lang1{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 2em;
+    padding: 0 1.3em;
+}
+
+.lang1 .icons{
+    height: 30px;
+    width: 30px;
+    color: var(--AQUA--);
+    font-size: 1em;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+    transition: 2.5s;
+  }
+  
+  
+  .lang1 .icons:hover{
+    color: var(--WHITE--);
+    background-color: var(--BLACK--);
+  }
+  
+  .lang1 .icons::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+    transition: .5s;
+  }
+.lang1 .money{
+    width: 40px;
+    height: 40px;
+    padding: 0.1em;
+    font-size: 40px;
+    color: var(--WHITE--);
+    border: 1px solid var(--AQUA--);
+    border-top-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+.lang1 .script{
+    font-size: var(--my-font-size);
+    font-family: var(--body-font);
+    color: var(--WHITE--);
+    font-weight: bold;
+}
+.four1 .description{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+
+}
+.description p{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--WHITE--);
+    max-width: 18em;
+    font-weight: bold;
+    text-align:start;
+}
+.description p span{
+    color: var(--AQUA--);
+    font-size: var(--);
+}
+
+
+.four1 .rating{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.rating .Num{
+    font-family: var(--body-font);
+    font-size: var(--smaller-font-size);
+    color: var(--WHITE--);
+    font-weight: 100;
+    align-self:last baseline;
+   padding: 0 1em 0 0;
+}
+.rating  .shown{
+    width: 90%;
+     background-color: var(--GRAY--);
+     height: 6px;
+     display: flex;
+     align-items: center;
+     border-radius: 10px;
+}
+.shown .current{
+    width: 82%;
+    height: 70%;
+    background-color: var(--AQUA--);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fourskill .four12{
+    width: 20em;
+    height: 18em;  
+    border: 1px solid var(--AQUA--);  
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.four12 .lang12{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+   gap: 0.3em;
+    padding: 0 1.3em;
+}
+
+.lang12 .icons{
+    height: 30px;
+    width: 30px;
+    color: var(--AQUA--);
+    font-size: 1em;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+    transition: 2.5s;
+  }
+  
+  
+  .lang12 .icons:hover{
+    color: var(--WHITE--);
+    background-color: var(--BLACK--);
+  }
+  
+  .lang12 .icons::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+    transition: .5s;
+  }
+.lang12 .money2{
+    width: 40px;
+    height: 40px;
+    padding: 0.1em;
+    font-size: 40px;
+    color: var(--WHITE--);
+    gap: 0.5em;
+    border: 1px solid var(--AQUA--);
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+.lang12 .script{
+    font-size: var(--my-font-size);
+    font-family: var(--body-font);
+    color: var(--WHITE--);
+    font-weight: bold;
+    padding-left: 1.5em;
+}
+.four12 .description2{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+
+}
+.description2 p{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--WHITE--);
+    max-width: 18em;
+    font-weight: bold;
+    text-align:start;
+}
+.description2 p span{
+    color: var(--AQUA--);
+    font-size: var(--);
+}
+
+
+.four12 .rating2{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.rating2 .Num2{
+    font-family: var(--body-font);
+    font-size: var(--smaller-font-size);
+    color: var(--WHITE--);
+    font-weight: 100;
+    align-self:last baseline;
+    padding: 0 1em 0 0;
+}
+.rating2  .shown2{
+    width: 90%;
+     background-color: var(--GRAY--);
+     height: 6px;
+     display: flex;
+     align-items: center;
+     border-radius: 10px;
+}
+.shown2 .current2{
+    width: 93%;
+    height: 70%;
+    background-color: var(--AQUA--);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fourskill .four13{
+    width: 20em;
+    height: 18em;
+    border: 1px solid var(--AQUA--);  
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.four13 .lang13{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 2em;
+    padding: 0 1.3em;
+}
+
+.lang13 .icons{
+    height: 30px;
+    width: 30px;
+    color: var(--AQUA--);
+    font-size: 1em;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+    transition: 2.5s;
+  }
+  
+  
+  .lang13 .icons:hover{
+    color: var(--WHITE--);
+    background-color: var(--BLACK--);
+  }
+  
+  .lang13 .icons::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+    transition: .5s;
+  }
+.lang13 .money3{
+    width: 40px;
+    height: 40px;
+    padding: 0.1em;
+    font-size: 40px;
+    color: var(--WHITE--);
+    border: 1px solid var(--AQUA--);
+    border-top-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+.lang13 .script{
+    font-size: var(--my-font-size);
+    font-family: var(--body-font);
+    color: var(--WHITE--);
+    font-weight: bold;
+}
+.four13 .description3{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+
+}
+.description3 p{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--WHITE--);
+    max-width: 18em;
+    font-weight: bold;
+    text-align:start;
+}
+.description3 p span{
+    color: var(--AQUA--);
+    font-size: var(--);
+}
+
+
+.four13 .rating3{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.rating3 .Num3{
+    font-family: var(--body-font);
+    font-size: var(--smaller-font-size);
+    color: var(--WHITE--);
+    font-weight: 100;
+    align-self:last baseline;
+   padding: 0 1em 0 0;
+}
+.rating3  .shown3{
+    width: 90%;
+     background-color: var(--GRAY--);
+     height: 6px;
+     display: flex;
+     align-items: center;
+     border-radius: 10px;
+}
+.shown3 .current{
+    width: 70%;
+    height: 70%;
+    background-color: var(--AQUA--);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fourskill .four14{
+    width: 20em;
+    height: 18em; 
+    border: 1px solid var(--AQUA--);  
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.four14 .lang14{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 2em;
+    padding: 0 1.3em;
+}
+
+.lang14 .icons{
+    height: 30px;
+    width: 30px;
+    color: var(--AQUA--);
+    font-size: 1em;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+    transition: 2.5s;
+  }
+  
+  
+  .lang14 .icons:hover{
+    color: var(--WHITE--);
+    background-color: var(--BLACK--);
+  }
+  
+  .lang14 .icons::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+    transition: .5s;
+  }
+.lang14 .money4{
+    width: 40px;
+    height: 40px;
+    padding: 0.1em;
+    font-size: 40px;
+    color: var(--WHITE--);
+   
+    border: 1px solid var(--AQUA--);
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+.lang14 .script4{
+    font-size: var(--my-font-size);
+    font-family: var(--body-font);
+    color: var(--WHITE--);
+    font-weight: bold;
+}
+.four14 .description4{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+}
+.description4 p{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--WHITE--);
+    max-width: 16em;
+    font-weight: bold;
+    text-align:start;
+}
+.description4 p span{
+    color: var(--AQUA--);
+    font-size: var(--);
+}
+
+
+.four14 .rating4{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.rating4 .Num4{
+    font-family: var(--body-font);
+    font-size: var(--smaller-font-size);
+    color: var(--WHITE--);
+    font-weight: 100;
+   align-self:last baseline;
+   padding: 0 1em 0 0;
+}
+.rating4  .shown4{
+    width: 90%;
+     background-color: var(--GRAY--);
+     height: 6px;
+     display: flex;
+     align-items: center;
+     border-radius: 10px;
+}
+.shown4 .current{
+    width: 89%;
+    height: 70%;
+    background-color: var(--AQUA--);
+}
+
+
+
+
+
+
+
+
+.skot0{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+   top: 0;
+    background-color: var(--AQUA--);
+    position: absolute;
+  }
+  .skot1{
+    background-color: var(--WHITE--);
+    position: absolute;
+    display: flex;
+    width: 50px;
+    height: 50px;
+   left: 86%;
+   top: 20%;
+    border-radius: 50%;
+  }
+  
+  .skot11{
+    background-color: var(--WHITE--);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 40%;
+    left: 4%;
+    border-radius: 50%;
+  }
+  .skot111{
+    background-color: var(--AQUA--);
+    position: absolute;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    top: 60%;
+    left: 80%;
+    border-radius: 50%;
+  }
+  .skot1111{
+    background-color: var(--AQUA--);
+    position: absolute;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    top: 86%;
+    left: 45%;
+    border-radius: 50%;
+  }
+  
+  @media  (max-width:500px) {
+
+    .skillhold{
+        height: 140vh;
+       
+    }
+
+    .skillhold .holdskillevery {
+        gap: 0.7em;
+        text-align: center;
+    }
+
+    .holdskillevery .softskill{
+        font-size: var(--my-font-size);
+
+    }
+    .holdskillevery .fourskill{
+        height: 93%;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .fourskill .four1{
+        width: 100%;
+        height: 25%;
+        justify-content: center;
+        border-bottom-left-radius:0em ;
+        border-top-right-radius:2em ;
+    }
+    .fourskill .four12{
+        width: 100%;
+        height: 25%;
+        justify-content: center;
+        border-bottom-left-radius:2em ;
+        border-bottom-right-radius:2em ;
+    }
+    .four12 .lang12{
+        justify-content: space-evenly;
+        padding: 0 0 0 0;
+    }
+
+
+
+
+    .fourskill .four13{
+        width: 100%;
+        height: 25%;
+        border-bottom-left-radius: 0em;
+        border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    justify-content: center;
+  
+    }
+    .fourskill .four14{
+        width: 100%;
+        height: 25%;
+        justify-content: center;
+        border-bottom-left-radius: 0em;
+        border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    }
+
+    .skot0{
+        bottom: unset;
+        top: 5%;
+        left: 3%;
+    }
+    .skot1{
+        top: 20%;
+        left: 86%;
+    }
+    .skot11{
+        top: 40%;
+        left: 3%;
+    }
+    .skot111{
+        top: 60%;
+        left: 80%;
+    }
+    .skot1111{
+        top: 90%;
+        left: 45%;
+    }
+  }
+
+
+
+
+
+
+
+  @media  (min-width:501px) and (max-width:900px){
+      .skillhold{
+        height: 110vh;
+    }
+    .holdskillevery .softskill{
+        font-size: var(--my-font-size);
+        align-self: first baseline;
+        padding-left: 1em;
+    }
+    .holdskillevery .fourskill{
+        height: 80%;
+        width: 94%;
+        padding:  0 0 0 1em;
+        align-items: center;
+        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      
+       gap: 0.5em;
+    }
+    .fourskill .four1{
+        width: 90%;
+        height: 90%;
+    }
+    .fourskill .four12{
+        width: 90%;
+        height: 90%;
+    }
+    .fourskill .four13{
+        width: 90%;
+        height: 90%;
+    }
+    .fourskill .four14{
+        width: 90%;
+        height: 90%;
+    }
+    
+  }

@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+:root {
+
+  --AQUA--:rgb(7, 252, 252);
+  --BLACK--: hsl(0, 0%, 3%);
+  --GRAY--: #333333;
+  --WHITE--:#ffffff;
+ 
+ 
+  --body-font: 'Space Grotesk', sans-serif ;
+  --biggest-font-size: 2.375rem;
+  --normal-font-size: 1.5em;
+  --smaller-font-size: .75rem;
+  --my-font-size:1.5em;
+ }
+ 
+ @media screen  and (min-width: 1024px){
+   :root {
+           --biggest-font-size: 5rem;
+           --normal-font-size: 1rem;
+           --smaller-font-size: .813rem;
+       }
+   }
+
+
+   *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .Textimonials{
+    background-color: var(--BLACK--);
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+  }
+
+  .textimonialsins{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   gap: 1.5em;
+   backdrop-filter: blur(20px);
+   background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+  
+  }
+
+  .textimonialsins .listh1{
+    font-size: 2em;
+    font-family: var(--body-font);
+    color: var(--WHITE--);
+    font-weight: bold;
+    padding-top: 1em;
+  }
+
+ 
+  .textimonialsins .listp{
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+    color: var(--WHITE--);
+  }
+
+
+
+        
+
+.textimonialsins .con2{
+  width: 100%;
+  height: 70%;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.con2 .main-scroll-div{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*
+
+ .cover::before{
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  z-index: 99;
+  height: 100%;
+  width: 150px;
+  background-image: linear-gradient(90deg, black, transparent);
+}
+
+.cover::after{
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  z-index: 99;
+  height: 99%;
+  width: 150px;
+  background-image: linear-gradient(-90deg, black, transparent);
+}
+*/
+
+.main-scroll-div  .scrolling{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  overflow: auto;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+.scrolling .contain{
+ 
+  margin: 1px 10px;
+ 
+  animation:30s slide infinite linear;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+gap: 1em;
+
+min-width: 270px;
+height: 300px;
+color: #f9f9f9;
+background-color: transparent;
+border-top-left-radius: 2em;
+border-bottom-right-radius: 2em;
+border-bottom-left-radius: 2em;
+border: 1px solid var(--AQUA--);
+}
+
+
+.contain .quote{
+  font-size: 2em;
+  align-self: first baseline;
+  margin: 1em 0em 0em 0.9em;
+  color: var(--AQUA--);
+}
+ .contain .rating{
+  width: 80%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+ }
+.rating p{
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  color: var(--WHITE--);
+  font-weight: bold;
+ 
+}
+.rating .star5{
+  font-size: 1.3em;
+ color: gold;
+ align-self: first baseline;
+}
+
+
+.rating .star5 span{
+ color: var(--GRAY--);
+}
+.contain .per{
+  width: 78%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: transparent;
+  align-self: first baseline;
+  justify-self: start;
+  border-top-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+  border: 1px solid var(--AQUA--);
+ 
+}
+.per .perimg{
+  width: 20%;
+  height: 70%;
+  border-radius: 50%;
+  border: 1px solid var(--AQUA--);
+  background-image:url(../../../public/image/Screenshot_20230725-152113~2.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.per .tex{
+  width: 70%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+.tex .tax1{
+  font-size: var(--smaller-font-size);
+  color: var(--WHITE--);
+  font-weight: bold;
+}
+
+.tex .tax2{
+  font-size:0.7em;
+  color: var(--WHITE--);
+  font-weight: 200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.scrolling::-webkit-scrollbar{
+  -webkit-appearance: none;
+}
+
+.iconbtn{
+  color: var(--AQUA--);
+  font-size: 30px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid var(--AQUA--);
+  padding: 0px 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: inline-flex;
+}
+/*
+
+@keyframes slide{
+  from{
+    transform: translateX(900px);
+  }
+  to{
+    transform: translateX(-900px);
+  }
+}
+*/
+
+
+
+
+
+.pskot1t{
+  background-color: var(--WHITE--);
+  position: absolute;
+  display: flex;
+  width: 50px;
+  height: 50px;
+ left: 93%;
+ top: 20%;
+  border-radius: 50%;
+}
+.pskot11t{
+  background-color: var(--WHITE--);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 40%;
+  left: 4%;
+  border-radius: 50%;
+}
+.pskot111t{
+  background-color: var(--AQUA--);
+  position: absolute;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  top: 60%;
+  left: 75%;
+  border-radius: 50%;
+}
+.pskot1111t{
+  background-color: var(--AQUA--);
+  position: absolute;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  top: 86%;
+  left: 30%;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+@media  (max-width:500px) {
+  
+  
+.main-scroll-div  .scrolling{
+  height: 90%;
+   }
+   .scrolling .contain{
+    height: 90%;
+   }
+   .iconbtn{
+    display: none;
+   }
+
+  
+  .pskot1t{
+      top: 20%;
+      left: 50%;
+  }
+  .pskot11t{
+      top: 40%;
+      left: 3%;
+  }
+  .pskot111t{
+      top: 60%;
+      left: 86%;
+  }
+  .pskot1111t{
+      top: 90%;
+      left: 45%;
+  }
+
+  }
+
+
+@media  (min-width:501px) and (max-width:900px){
+  .Textimonials{
+    height: 80vh;
+  }
+  .con2 .main-scroll-div{
+    width: 100%;
+    
+      
+  }
+  
+.main-scroll-div  .scrolling{
+  height: 90%;
+  border-radius: 10%;
+
+   }
+   .scrolling .contain{
+    height: 90%;
+   } 
+
+   .iconbtn{
+    font-size: 20px;
+    border-radius: 10px;
+     
+   }
+}
