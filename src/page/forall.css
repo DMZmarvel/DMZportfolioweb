@@ -391,10 +391,11 @@
 .inside2 .xx2{
   width: 80%;
   height: auto;
+  font-size: 2em;
   text-align: right;
   justify-content:last baseline;
   align-items: center;
-  padding: 1em 0;
+  padding: 0em 0;
 }
 .inside2 .insbtn2{
   width: 170px;

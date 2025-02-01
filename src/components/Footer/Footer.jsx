@@ -5,6 +5,7 @@ import { PiPhoneCallFill } from "react-icons/pi";
 import { MdOutlineEmail } from "react-icons/md";
 import { Link } from "react-router-dom"
 import { useNavigate } from 'react-router-dom';
+import userImage from "../../assets/ontimrrate.jpeg";
 
 const footerTranslations = {
   en: {
@@ -210,7 +211,7 @@ export const Footer = ({ language}) => {
           
           <div className="insidefoter2">
             <p>{t.copyright}</p>
-          </div>
+    </div>
   
    </div>
 
@@ -255,9 +256,9 @@ export const Footer = ({ language}) => {
                         <li  className='li4'>
                         <input type="radio" name='roll' id='first4' />
                           <label className='label4' htmlFor="first4">How do I start working with you?</label>
-                        <div className="content4">To get started, simply contact me through the Contact page or email me directly at [your email]. 
+                        <div className="content4">To get started, simply contact me through the Contact page or email me directly at [destinmarvel3@gmail.com]. 
                           Provide a brief description of your project, and I’ll get back to you promptly to discuss the next steps.
-                        .</div>
+                        </div>
                         </li>
                       
                         <li  className='li5'>
@@ -306,7 +307,8 @@ Cookies are little text files that are stored within your browser’s cache. Fir
                        <div className="inspo2">
 You have the right to request your data. If something is incorrect, you can have it altered or removed.
 
-You can also disable cookies on your device by changing your browser’s settings. You have the option to use opt-out programs like, "NAI’s Consumer opt-out" or "Google Analytics opt-out browser add-on". These prevent cookies from being used in your browser. Know that if you do this, our site may not function properly.
+You can also disable cookies on your device by changing your browser’s settings. You have the option to use opt-out programs like, "NAI’s Consumer opt-out" or "Google Analytics opt-out browser add-on".
+ These prevent cookies from being used in your browser. Know that if you do this, our site may not function properly.
 </div>
                     </div>
 
@@ -506,12 +508,12 @@ to make a difference, Creating Impactful Application, Solving Problems Through C
 
                            
                              <div className="one0-choose"> </div>
-                        </div>
+                       </div>
 
 
 
                         <div className="choose2">
-                        <img src="/image/ontimrrate.jpeg" />
+                        <img src={userImage} className='timconci'/>
                               <h1>98% <br /> On-Time Rate</h1>
 
                                    <p>Meeting deadlines is a crucial part of my work ethic. With a 98% on-time rate, 
