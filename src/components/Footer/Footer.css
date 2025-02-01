@@ -1598,7 +1598,7 @@ gap: 2em;
    background-size:cover;
    background-repeat: no-repeat;
    background-position: center;
-   background-image:url(../../../public/image/project\ success.jpeg);
+   background-image:url('/image/project success.jpeg');
  
  }
 
@@ -2291,7 +2291,7 @@ gap: 2em;
   .why-choose-us .choose2{
     width: 100%;
     height: 30%;
-    background-color: darkred;
+  
   }
   .why-choose-us .choose3{
     flex-direction: column-reverse;

@@ -511,7 +511,7 @@ to make a difference, Creating Impactful Application, Solving Problems Through C
 
 
                         <div className="choose2">
-                        <img src="./public/image/ontimrrate.jpeg" />
+                        <img src="/image/ontimrrate.jpeg" />
                               <h1>98% <br /> On-Time Rate</h1>
 
                                    <p>Meeting deadlines is a crucial part of my work ethic. With a 98% on-time rate, 
