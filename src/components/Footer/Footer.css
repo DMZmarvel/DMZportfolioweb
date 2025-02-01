@@ -226,6 +226,7 @@ animation-fill-mode: forwards;
   color: var(--WHITE--);
   font-size: var(--smaller-font-size);
   font-weight: 100;
+  font-family: var(--body-font);
 }
 .insidefot2 a:hover{
   font-weight: bold;
@@ -252,6 +253,7 @@ animation-fill-mode: forwards;
   color: var(--WHITE--);
   font-size: var(--smaller-font-size);
   font-weight: 100;
+  font-family: var(--body-font);
 }
 .insidefot3 a:hover{
   font-weight: bold;
@@ -1596,7 +1598,7 @@ gap: 2em;
    background-size:cover;
    background-repeat: no-repeat;
    background-position: center;
-   background-image:url(../../../public/image/IMG_20240702_220919_784.jpg) ;
+   background-image:url(../../../public/image/project\ success.jpeg);
  
  }
 
@@ -1630,7 +1632,7 @@ gap: 2em;
 .choose2 h1{
   font-family: var(--body-font);
   font-size: var(--my-font-size);
-  color:black;
+  color:var(--WHITE--);
   justify-content: first baseline;
   z-index: 10;
 }
@@ -1638,7 +1640,7 @@ gap: 2em;
 .choose2 p{
   font-family: var(--body-font);
   font-size: var(--smaller-font-size);
-  color:black;
+  color:var(--WHITE--);
   max-width:22em ;
   text-align: justify;
   font-weight: 800;
@@ -1655,7 +1657,7 @@ gap: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center;  
   text-align: center;
   gap: 1em;
 }
@@ -1664,7 +1666,7 @@ gap: 2em;
 
 .choose3 .three0-choose{
   width: 100%;
-  height: 40%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1693,7 +1695,7 @@ gap: 2em;
 
 .choose3 .three-choose{
   width: 100%;
-  height: 55%;
+  height: 50%;
   display: flex;
   flex-direction: column;
  
@@ -1702,7 +1704,7 @@ gap: 2em;
   background-size:cover;
    background-repeat: no-repeat;
    background-position: center;
-   background-image:url(../../../public/image/IMG_20240702_220919_784.jpg) ;
+   background-image:url(../../../public/image/300+delivery.jpeg) ;
  
 }
 
@@ -2289,7 +2291,7 @@ gap: 2em;
   .why-choose-us .choose2{
     width: 100%;
     height: 30%;
-    
+    background-color: darkred;
   }
   .why-choose-us .choose3{
     flex-direction: column-reverse;

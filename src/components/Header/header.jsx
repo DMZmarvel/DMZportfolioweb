@@ -128,17 +128,17 @@ window.onload = () => {
             
                     <div className="satisfactory">
                       <div className="tory0">
-                        <h1  id="experience" data-value="3"><Counter value={10}/></h1>
+                        <h1  id="experience" data-value="3"><Counter value={5}/>+</h1>
                         <p>Years of exprience</p>
                       </div>
                       <hr />
                       <div className="tory0">
-                        <h1 id="Projects" data-value="10"><Counter value={10}/></h1>
+                        <h1 id="Projects" data-value="10"><Counter value={10}/>+</h1>
                         <p >Project Success</p>
                       </div>
                       <hr />
                       <div className="tory0">
-                        <h1> <Counter value={91}/></h1>
+                        <h1> <Counter value={91}/>%</h1>
                         <p>Satisfied Rate</p>
                       </div>
                     </div>

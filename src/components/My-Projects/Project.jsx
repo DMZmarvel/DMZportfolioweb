@@ -21,7 +21,7 @@ function Project() {
                     <div className="projectlink">
                         <p>SOCIAL MEDIA CLONE</p>
                         <div className="linkaa">
-                                   <a href="#"><FaGithub  className="icons"/></a>
+                                   <a href="https://github.com/DMZmarvel"><FaGithub  className="icons"/></a>
                                    <a href="#"> <FaGlobe className="icons" /> </a>
                         </div>
                     </div>
@@ -38,7 +38,7 @@ function Project() {
                     <div className="projectlink2">
                         <p>E-COMMERCE WEBSITE</p>
                         <div className="linkaa2">
-                                   <a href="#"><FaGithub  className="icons"/></a>
+                                   <a href="https://github.com/DMZmarvel"><FaGithub  className="icons"/></a>
                                    <a href="#"> <FaGlobe className="icons" /> </a>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ function Project() {
                     <div className="projectlink3">
                         <p>CHATTING APP</p>
                         <div className="linkaa3">
-                                   <a href="#"><FaGithub  className="icons"/></a>
+                                   <a href="https://github.com/DMZmarvel"><FaGithub  className="icons"/></a>
                                    <a href="#"> <FaGlobe className="icons" /> </a>
                         </div>
                     </div>

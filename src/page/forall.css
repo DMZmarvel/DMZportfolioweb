@@ -41,7 +41,7 @@
   flex-direction: column;
   align-items:center;
   justify-content: center;
-  background-color: transparent;
+  background-color: var(--BLACK--);
  }
   
  .nava2 {
@@ -372,7 +372,7 @@
   align-items: center;
   justify-content: center;
   right: -800px;
-  transition:  2s ease-in-out;
+  transition:  1.4s ease;
 }
 
 .sidebar2 .inside2{
@@ -853,7 +853,7 @@
 
 
 
-@media  (min-width:501px) and (max-width:1100px){
+@media  (min-width:501px) and (max-width:1199px){
  
   .nava2{
     justify-content: center;

@@ -166,7 +166,7 @@ export const Footer = ({ language}) => {
 
           <div className="insidefot2">
             <h1>{t.information}</h1>
-            <a onClick={() => handleOpenContent("Aboutus")} >{t.aboutUs}</a>
+            <a onClick={() => handleOpenContent("About Us")} >{t.aboutUs}</a>
         {/*    <a onClick={() => handleOpenContent("Pricing")}>{t.pricing}</a>
             <a onClick={() => handleOpenContent("Community")}>{t.community}</a>
             <a onClick={() => handleOpenContent("Blog")}>{t.blog}</a> */}
@@ -322,7 +322,7 @@ Any information we gather is only shared with our affiliate partners for analyti
                        <div className="inspo1">What information do we gather specifically?</div>
                        <div className="inspo2">
 The information we gather is what you supply us with when signing up for a newsletter or making a purchase. This is usually demographic information like name, address, or general contact information.
- Cookies will also gather session information like the pages viewed, the amount of time spent in the session, transactions, and any other general demographic information (origin, gender, age).
+ Cookies will also gather session information like the pages viewed, the amount of time spent in the session, transactions, and any other general demographic information eg (origin, gender, age).
 </div>
                     </div>
                   </div>
@@ -334,15 +334,15 @@ The information we gather is what you supply us with when signing up for a newsl
                     <div className="trm">
                       <h1>TERMS & CONDITIONS </h1>
 
-                      <p>Last updated: [20/01/2025]</p>
+                      <p>Last updated: [30/01/2025]</p>
                     </div>
 
                   <div className="knownow">
                     <div className="now1">
                       <h2>Introduction </h2>
-                      <p>Welcome to [DMZPortfolioWebsite]! By using our website and/or using the services that are provided, you acknowledge that you have read, understood, and agree to be bound by our Terms and Conditions. 
+                      <p>Welcome to DMZPortfolioWebsite! By using our website and/or using the services that are provided, you acknowledge that you have read, understood, and agree to be bound by our Terms and Conditions. 
                         These Terms and Conditions unconditionally extend and apply to all related applications, internet services, or website extensions. If you are not in agreement with all of these Terms and Conditions,
-                         you are prohibited from using this Website, and you may discontinue use immediately. [DMZPortfolioWebsite] recommends that you save or print a copy of these Terms and Conditions for future reference.
+                         you are prohibited from using this Website, and you may discontinue use immediately. DMZPortfolioWebsite recommends that you save or print a copy of these Terms and Conditions for future reference.
                       </p>
                     </div>
 
@@ -350,9 +350,9 @@ The information we gather is what you supply us with when signing up for a newsl
                     <div className="now2">
                         <h2>Agreement to Terms and Conditions
                         </h2>
-                        <p>[DMZPortfolioWebsite] Terms And Conditions (these "Terms" or these "Terms and Conditions") contained in this Agreement shall govern your use of this Website and all its content 
-                          (collectively referred to herein as this "Website"). These Terms outline the rules and regulations guiding the use of [DMZPortfolioWebsite] located at [http://localhost:5174/]. 
-                          All materials/information/documents/services or all other entities (collectively referred to as content) that appear on the [DMZPortfolioWebsite] shall be administered subject to these Terms and Conditions. 
+                        <p>DMZPortfolioWebsite Terms And Conditions these "Terms" or these "Terms and Conditions" contained in this Agreement shall govern your use of this Website and all its content 
+                          collectively referred to herein as this "Website". These Terms outline the rules and regulations guiding the use of DMZPortfolioWebsite.
+                          All materials/information/documents/services or all other entities collectively referred to as content that appear on the DMZPortfolioWebsite shall be administered subject to these Terms and Conditions. 
                           These Terms and Conditions apply in full force and effect to your use of this Website, and the use of this Website constitutes an express agreement with all the terms and conditions contained herein in full.
                            Do not continue to use this Website if you have any objection to any of the Terms and Conditions stated on this page.
                            </p>
@@ -369,7 +369,7 @@ The information we gather is what you supply us with when signing up for a newsl
                          to both you and us. All terms refer to all considerations of [DMZPortfolioWebsite] necessary to
                           undertake support to you for the express purpose of meeting your User needs in respect 
                           of our services, under and subject to, prevailing law of the state or country in which 
-                          [DMZPortfolioWebsite] operates ([NIGERIA]).
+                          DMZPortfolioWebsite operates in [NIGERIA].
                          Any use of these definitions or other glossary in the singular,</p>
                     </div>
                     <div className="now4">
@@ -386,7 +386,7 @@ The information we gather is what you supply us with when signing up for a newsl
                   </div>
                 )}
                 
-                {activeContent === "Aboutus" && (
+                {activeContent === "About Us" && (
                   <div className="Us-About">
                     <div className="Us-right">
                       <h2>About Us</h2>
@@ -394,49 +394,63 @@ The information we gather is what you supply us with when signing up for a newsl
 
                     <div className="Us-container">
 
-                      <div className="Us-con1">
-                          <h1>About Us </h1>
-                          <p>Welcome to [Your Business/Organization Name], where [describe your core purpose or mission]!
-
-At [Your Business Name], we are passionate about [key industry or activity, e.g., providing innovative solutions, creating exceptional
- products, delivering top-notch services, etc.]. Founded in [year], our journey began with a simple idea: [highlight your inspiration or 
- purpose, e.g., to make a difference, solve a problem, improve lives, etc.].
-</p>
-                      </div>
+                    
 
                       <div className="Us-con2">
                       <h1>Our Mission</h1>
-                      <p>Our mission is to [state your mission, e.g., empower communities, redefine standards, make technology accessible, etc.].
-                         We strive to deliver [describe what you offer] with a focus on [highlight core values like quality, customer satisfaction, innovation, or sustainability].
+                      <p>Our mission is to Continously grow my skills in software development and solving real-world problems through code
+                         We strive to deliver Web development, Cyber Security, Digital Marketing, Web Hosting  with a focus on  customer satisfaction, innovation, and sustainability.
                       </p>
+                      </div>
+
+                      <div className="Us-con1">
+                          <h1>About Us </h1>
+                          <p>Welcome to DMZPortfolioWebsite, where we build innovative and User-Friendly Software!
+
+At DMZ, we are passionate about, providing innovative solutions, creating exceptional
+ projects, delivering top-notch services, etc.. Founded in 30 January 2025, our journey began with a simple idea:
+to make a difference, Creating Impactful Application, Solving Problems Through Code, etc..
+</p>
                       </div>
 
                       <div className="Us-con3">
                       <h1>Our Vision</h1>
-                      <p>Our vision is to [describe your long-term goal, e.g., become a global leader in your field, revolutionize your industry, or inspire change].
+                      <p>To become a skilled and innovative software engineer, creating impactful, efficient, and user-friendly applications that solve real-world problems.
+                         I aim to continuously learn, grow, and contribute to the tech community while building high-quality digital experiences.
 
 </p>
                       </div>
 
                       <div className="Us-con4">
                       <h1>What We Offer</h1>
-                      <p>We specialize in [list key products, services, or solutions]. With a team of [mention your expertise, e.g., dedicated professionals, skilled artisans, creative minds], we ensure that every [product/service] we deliver meets the highest standards.
+                      <p>1. Front-End Development – Crafting intuitive and visually appealing user interfaces using React.
+<br />
+
+2. Problem-Solving – Writing clean, efficient code to solve challenges and improve user experience.
+
+<br />
+3. Continuous Learning – Adapting to new technologies and best practices to stay ahead in the industry.
+<br />
+
+4. Portfolio Projects – Showcasing skills through real-world applications, demonstrating both front-end and future back-end capabilities.
+<br />
+
+5. User-Centered Design – Ensuring applications are accessible, responsive, and enjoyable to use.
+
+
                       </p>
                       </div>
 
                       <div className="Us-con5">
                       <h1>Why Choose Us</h1>
-                      <p>Highlight key strengths or unique selling points, e.g., exceptional customer service, innovative solutions, sustainable practices, etc.
+                      <p>Exceptional customer service, innovative solutions, sustainable practices, etc.
 
-[Show evidence of expertise, e.g., years of experience, awards, or certifications.]
-
-[Mention customer trust or satisfaction, e.g., thousands of happy customers, positive reviews, etc.]
 </p>
                       </div>
 
                       <div className="Us-con6">
                       <h1>Meet the Team</h1>
-                      <p>Our success is driven by a team of passionate individuals who share a common goal: to make a positive impact. Each member brings [highlight skills or diversity] to 
+                      <p>Our success is driven by a team of passionate individuals who share a common goal: to make a positive impact. Each member brings a unique idea to 
                         ensure that we exceed your expectations.</p>
                       </div>
 
@@ -445,15 +459,15 @@ At [Your Business Name], we are passionate about [key industry or activity, e.g.
                       <h1>Join Us on Our Journey
                       </h1>
                       <p>We believe in building lasting relationships with our customers, partners, and community. 
-                        Whether you’re here to [describe the audience’s goal, e.g., explore our offerings, learn about us, or collaborate], 
-                        we are excited to welcome you into the [Your Business Name] family.
+                        Whether you’re here to  explore our offerings, learn about us, or collaborate, 
+                        we are excited to welcome you into the DMZ family.
                       </p>
                       </div>
 
                       <div className="Us-con8">
                       <h1>Contact Us  </h1>
-                      <p>We’d love to hear from you! Reach out to us at [contact email/phone number] or
-                         visit us at [location]. Stay connected by following us on [list social media platforms].</p>
+                      <p>We’d love to hear from you! Reach out to us at <strong>destinmarvel3@gmail.com</strong> or
+                         visit us at JengaTech ltd. Stay connected by following us on Facebook, Instagram, Twitter.</p>
                       </div>
 
                     </div>
@@ -487,7 +501,7 @@ At [Your Business Name], we are passionate about [key industry or activity, e.g.
                                    that exceed expectations.*/}
                               </p>
 
-                                <h1>99.8% Success Progress</h1>
+                                <h1>99.8% Project Success</h1>
                              </div>
 
                            
@@ -497,7 +511,7 @@ At [Your Business Name], we are passionate about [key industry or activity, e.g.
 
 
                         <div className="choose2">
-                        <img src="/public/image/IMG_20240702_220919_784.jpg" alt="" />
+                        <img src="./public/image/ontimrrate.jpeg" />
                               <h1>98% <br /> On-Time Rate</h1>
 
                                    <p>Meeting deadlines is a crucial part of my work ethic. With a 98% on-time rate, 

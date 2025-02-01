@@ -674,6 +674,7 @@
 }
 .tory0 h1{
   font-size: 2em;
+  display: inline-flex;
   font-family: var(--body-font);
   color: var(--AQUA--);
 }

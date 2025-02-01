@@ -11,7 +11,7 @@
  
   --body-font: 'Space Grotesk', sans-serif ;
   --biggest-font-size: 2.375rem;
-  --normal-font-size: 1.5em;
+  --normal-font-size: .938rem;
   --smaller-font-size: .75rem;
   --my-font-size:1.5em;
  }
@@ -212,7 +212,7 @@ border: 1px solid var(--AQUA--);
   height: 70%;
   border-radius: 50%;
   border: 1px solid var(--AQUA--);
-  background-image:url(../../../public/image/Screenshot_20230725-152113~2.jpg) ;
+  background-image:url(../../../public/image/userimg.png) ;
   background-repeat: no-repeat;
   background-size: cover;
 }

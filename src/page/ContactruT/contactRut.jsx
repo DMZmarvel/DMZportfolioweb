@@ -16,7 +16,7 @@ useEffect(() => {
 
 if (Loading) {
   return  <div className="puff">
-  <PuffLoader color="aqua" size={100} />;
+  <PuffLoader color="aqua" size={100} />
 </div>
 }
 

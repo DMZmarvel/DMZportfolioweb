@@ -15,7 +15,7 @@ const Header1 = () => {
   
   if (Loading) {
     return  <div className="puff">
-    <PuffLoader color="#3498db" size={60} />;
+    <PuffLoader color="#3498db" size={60} />
   </div>
   }
   

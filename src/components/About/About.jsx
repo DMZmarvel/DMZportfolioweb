@@ -18,8 +18,8 @@ export const About = () => {
           
         </div>
         <div className="my-text1">
-          <div className="FName">` Destiny Chukwuemeka</div>
-          <div className="FName">  ` 00 Years</div>
+          <div className="FName">` Destiny Marvel</div>
+          <div className="FName">  ` Jenga Tech</div>
           <div className='FName'>` Nigeria</div>
           <div className='FName'>` destinmarvel3@gmail.com</div>
           <div className="FName">` +234 703 182 8844</div>
