@@ -116,9 +116,13 @@ export const Footer = ({ language}) => {
     setActiveContent("");
   };
 
+  const handleClick = () => {
+    setActiveContent("");
+  }
+
   const navigate = useNavigate();
 
-  const goToAbout3 = () => {
+  const goTocontact = () => {
      navigate("/ContactRut")
   }
 
@@ -181,7 +185,7 @@ export const Footer = ({ language}) => {
             <a  onClick={() => handleOpenContent("Terms & Conditions")}>{t.terms}</a>
             <a onClick={() => handleOpenContent("Privecy policy")}>{t.privacy}</a>
             <a onClick={() => handleOpenContent("FAQ")}>{t.faq}</a>
-            {/*<button onClick={goToAbout3}>go to about</button>*/}
+            {/*<button onClick={goTocontact}>go to about</button>*/}
    
           </div>
 
@@ -214,6 +218,8 @@ export const Footer = ({ language}) => {
     </div>
   
    </div>
+
+
 
       {activeContent && (
           <div className="sliding-panal">
@@ -249,7 +255,7 @@ export const Footer = ({ language}) => {
                        <input type="radio" name='roll' id='first3' />
                           <label className='label3' htmlFor="first3">How much do yo charge for your services</label>
                         <div className="content3"> My pricing depends on the scope and complexity of the project. For a detailed quote,please reach out
-                          to me through the <Link to="/ContactRut">Contact-Page </Link> with your project requirements.
+                          to me through the <Link to="/ContactRut" onClick={handleClick}>Contact-Page </Link> with your project requirements.
                         </div>
                         </li>
 
@@ -549,7 +555,7 @@ to make a difference, Creating Impactful Application, Solving Problems Through C
               </div>
 
           </div>
-      )};
+      )}
   </div>
   );
 };

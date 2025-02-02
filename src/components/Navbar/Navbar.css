@@ -1286,9 +1286,19 @@ return (
    
  }
  .social a .icons{
-  height: 23px;
+  height: 30px;
     width: 30px;
     padding: 0.1em;
+    border-top-left-radius: 0.5em;
+    border-bottom-right-radius: 0.8em;
+    border-bottom-left-radius: 0.8em;
+    border: none;
+ }
+ .social a .icons:hover{
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+      border-bottom-right-radius: 0.5em;
+      border-bottom-left-radius: 0em;
  }
 
 
@@ -1523,11 +1533,21 @@ return (
     z-index: -10;
    }
    .social a .icons{
-    height: 33px;
-      width: 40px;
-      padding: 0.2em;
-      
+    height: 30px;
+    width: 30px;
+    padding: 0.1em;
+    border-top-left-radius: 0.5em;
+    border-bottom-right-radius: 0.8em;
+    border-bottom-left-radius: 0.8em;
+    border: none;
    }
+  
+ .social a .icons:hover{
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+      border-bottom-right-radius: 0.5em;
+      border-bottom-left-radius: 0em;
+ }
 
 
   .dot{

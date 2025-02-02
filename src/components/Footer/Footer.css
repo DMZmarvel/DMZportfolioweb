@@ -394,7 +394,7 @@ animation-fill-mode: forwards;
   display: flex;
   width: 50px;
   height: 50px;
- left: 80%;
+ left: 85%;
  top: 60%;
   border-radius: 50%;
 }
@@ -415,7 +415,7 @@ animation-fill-mode: forwards;
   width: 50px;
   height: 50px;
   top: 77%;
-  left: 60%;
+  left: 40%;
   border-radius: 50%;
 }
 
@@ -462,8 +462,9 @@ animation-fill-mode: forwards;
 .close-btn{
   background: none;
   border: none;
-  font-size: 24px;
+  font-size: 45px;
   cursor: pointer;
+  color: var(--AQUA--);
 }
 .panel-body {
   padding: 20px;

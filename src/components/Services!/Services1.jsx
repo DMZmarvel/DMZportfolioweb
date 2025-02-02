@@ -4,7 +4,12 @@ import { FaCode, FaGlobe, FaFunnelDollar } from "react-icons/fa";
 import { GrTechnology } from "react-icons/gr";
 import { MdOutlineDeveloperMode } from "react-icons/md";
 import { SiWebmoney } from "react-icons/si";
-
+import userImage0 from "../../assets/webdesign3.jpeg";
+import userImage1 from "../../assets/webdevelopment2.jpeg";
+import userImage2 from "../../assets/degitalmarket2.jpeg";
+import userImage3 from "../../assets/webhost2.jpeg";
+import userImage4 from "../../assets/Appdev1.jpeg";
+import userImage5 from "../../assets/iot2.jpeg";
 
 function Services1() {
   return (
@@ -28,7 +33,7 @@ function Services1() {
             <div className="services-1">
 
                 <div className="ido1">
-                  <img src="/public/image/webdesign3.jpeg" alt="" />
+                   <img src={userImage0}/>
                       <a href="#"> <FaCode className="icon code" /> </a>
 
                        <h3 className='codeh3'>Web Design</h3>
@@ -38,7 +43,7 @@ function Services1() {
                        </p>
                 </div>
                 <div className="ido1">
-                  <img src="/public/image/webdevelopment2.jpeg" alt="" />
+                   <img src={userImage1}/>
                      <a href="#"> <FaGlobe className="icon code" /> </a>
 
                        <h3 className='codeh3'>Web Development</h3>
@@ -48,7 +53,7 @@ function Services1() {
                        </p>
                 </div>
                 <div className="ido1">
-                  <img src="/public/image/degitalmarket2.jpeg" alt="" />
+                <img src={userImage2}/>
                      <a href="#"> <FaFunnelDollar className="icon code" /> </a>
 
                        <h3 className='codeh3'>Digital Marketing</h3>
@@ -60,7 +65,7 @@ function Services1() {
 
             <div className="services-2">
             <div className="ido1">
-              <img src="./public/image/webhost2.jpeg" alt="" />
+            <img src={userImage3}/>
                  <a href="#"> <SiWebmoney className="icon code" /> </a>
 
                        <h3 className='codeh3'>Web Hosting</h3>
@@ -69,7 +74,7 @@ function Services1() {
                        </p>
                 </div>
                 <div className="ido1">
-                  <img src="/public/image/Appdev1.jpeg" alt="" />
+                <img src={userImage4}/>
                      <a href="#"> <MdOutlineDeveloperMode className="icon code" /> </a>
 
                        <h3 className='codeh3'>App Development</h3>
@@ -78,7 +83,7 @@ function Services1() {
                        </p>
                 </div>
                 <div className="ido1">
-                  <img src="/public/image/iot2.jpeg" alt="" />
+                <img src={userImage5}/>
                      <a href="#"> <GrTechnology className="icon code" /> </a>
 
                        <h3 className='codeh3'>IOT Projects</h3>

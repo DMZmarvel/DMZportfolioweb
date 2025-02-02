@@ -33,7 +33,7 @@ export const About = () => {
       
       <div className="Mintro">
           <p className="intro">
-               Hi, I'm <span>Destin marvel</span>, am a passionate and decicated software developer,
+               Hi, I'm <span>Destin marvel</span>, am a passionate and dedicated software developer,
                Whith 3 Years of exprience as a professional developer, i have acquired the 
                skill necessary to build great and premium websites,mobile apps,accounts... 
                <br />

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import {  FaXmark, FaBars, FaWifi } from "react-icons/fa6";
 import { Link } from "react-router-dom"
@@ -115,25 +115,44 @@ const [isOnline, setIsOnline] = useState(navigator .onLine);
 
 
 
-
-
-
+const [isOpen, setIsOpen] = useState(false);
+   const sidebarRef = useRef(null);
 
 
    
   const showSidebar1 = () => {
+   setIsOpen(true)
+};
+       const hideSidebar1 = () => {
+        setIsOpen(false);
+};
 
 
+useEffect(() => {
+  const handleClickOutside = (event) => {
+  if (sidebarRef.current && !sidebarRef.current.contains(event.target)){
+    hideSidebar1();
+  }
+};
+   if (isOpen) {
+    document.addEventListener("mousedown", handleClickOutside);
+   } else {
+    document.removeEventListener("mousedown", handleClickOutside);
+   }
 
+   return () => document.removeEventListener("mousedown", handleClickOutside);
+}, [isOpen]);
+{/*
+
+  const showSidebar = () => {
    const smallscr2 = document.querySelector ('.sidebar2');
        smallscr2.style.right = '0px';
 };
-       const hideSidebar1 = () => {
+       const hideSidebar = () => {
         const smallscr2 = document.querySelector ('.sidebar2');
             smallscr2.style.right = '-800px';
 
 };
-/*
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -180,7 +199,7 @@ function update() {
 
 setInterval(update, 1000);
 });
-*/
+*/}
 
 
 
@@ -330,8 +349,8 @@ const days = ["SUN", "MON", "TUE", "WED", "THUR", "FRI", "SAT"]
             
          
 
-         
-            <div className="sidebar2">
+         <div ref={sidebarRef} className={`sidebar2 ${isOpen ? "open" : ""}`} >
+          
       
             <div className="dott"></div>
             <div className="dot11"></div>
@@ -348,19 +367,18 @@ const days = ["SUN", "MON", "TUE", "WED", "THUR", "FRI", "SAT"]
       
       
       
-             <Link to="/ContactRut"> <button className='insbtn2'>Contact Me</button></Link> 
+             <Link to="/ContactRut" onClick={hideSidebar1}> <button className='insbtn2'>Contact Me</button></Link> 
       
       
               <div className="linkss2">
-              <Link to="/" className='active'><p>Header</p></Link> 
-              <Link to="/AboutRut"><p>About</p></Link> 
-              <Link to="/SkillRut"><p>Skills</p></Link> 
-              <Link to="/ServicesRut"><p>Service</p></Link> 
-              <Link to="/ProjectRut"><p>Project</p></Link> 
-              <Link to="/TestimonialRut"><p>Testimonials</p></Link>
+              <Link to="/" className='active' onClick={hideSidebar1}><p>Header</p></Link> 
+              <Link to="/AboutRut" onClick={hideSidebar1}><p>About</p></Link> 
+              <Link to="/SkillRut" onClick={hideSidebar1}><p>Skills</p></Link> 
+              <Link to="/ServicesRut" onClick={hideSidebar1}><p>Service</p></Link> 
+              <Link to="/ProjectRut" onClick={hideSidebar1}><p>Project</p></Link> 
+              <Link to="/TestimonialRut" onClick={hideSidebar1}><p>Testimonials</p></Link>
              
             </div>
-      
               </div>
             </div>
           </div>

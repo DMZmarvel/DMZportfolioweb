@@ -89,6 +89,7 @@
   width: 60%;
   height: 2em;
   border-bottom: 2px solid var(--AQUA--);
+  font-family: var(--body-font);
       border-radius: 0;
    font-size: var(--normal-font-size);
    color: var(--WHITE--);
