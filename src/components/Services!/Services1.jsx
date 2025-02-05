@@ -58,7 +58,7 @@ function Services1() {
 
                        <h3 className='codeh3'>Digital Marketing</h3>
                        <p className='codep'> At a high level, digital Marketing refers to
-                        advertising delivered through digital channels such as...
+                        advertising delivered through digital channels 
                        </p>
                 </div>
             </div>
@@ -70,7 +70,7 @@ function Services1() {
 
                        <h3 className='codeh3'>Web Hosting</h3>
                        <p className='codep'> Every wesite that you visit consists of a domain
-                        name and a web host. The easiest way to picture it is to think of..
+                        name and a web host.
                        </p>
                 </div>
                 <div className="ido1">
@@ -79,7 +79,7 @@ function Services1() {
 
                        <h3 className='codeh3'>App Development</h3>
                        <p className='codep'> Mobile app development is the act or process
-                        by which a mobile app is developed for mobile devices, such as...
+                        by which a mobile app is developed for mobile devices
                        </p>
                 </div>
                 <div className="ido1">

@@ -29,7 +29,7 @@ function Skills() {
                 </div>
 
                 <div className="description">
-                    <p>`With 3 Years of exprience i've been able to do amazing things 
+                    <p>`With 5 Years of exprience i've been able to do amazing things 
                      With <span>Javascript</span></p>
                 </div>
 
