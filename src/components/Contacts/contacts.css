@@ -273,25 +273,15 @@
 
 
 .status{
-  width: 39%;
+  width: 100%;
   height: 10%;
- 
+ font-size: var(--smaller-font-size);
   text-align: center;
   align-items: center;
   justify-content: center;
   display: flex;
+  color: var(--AQUA--);
 }
-
-
-.error{
-  color: red;
-}
-.success{
-  color: green;
-}
-
-
-
 
 
 

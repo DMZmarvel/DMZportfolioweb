@@ -277,7 +277,7 @@ export const Footer = ({ language}) => {
                         <li  className='li6'>
                         <input type="radio" name='roll' id='first6' />
                           <label className='label6' htmlFor="first6">What tools or technologies do you use?</label>
-                        <div className="content6">I work with tools and technologies like [list relevant tools, e.g., Figma, Adobe Suite, React, Python, WordPress]. 
+                        <div className="content6">I work with tools and technologies like eg: Postman, Vs Code, React, Python, Swift. 
                           My tech stack is constantly evolving to stay up to date with the latest trends.
                         </div>
                        </li>
