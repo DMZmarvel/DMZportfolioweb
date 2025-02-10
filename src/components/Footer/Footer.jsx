@@ -378,7 +378,7 @@ The information we gather is what you supply us with when partner and work with 
                           undertake support to you for the express purpose of meeting your User needs in respect 
                           of our services, under and subject to, prevailing law of the state or country in which 
                           DMZPortfolioWebsite operates in [NIGERIA].
-                         Any use of these definitions or other glossary in the singular,</p>
+                         Any use of these definitions or other glossary in the singular.</p>
                     </div>
                     <div className="now4">
                       <h2>Intellectual Property Rights</h2>
@@ -406,7 +406,7 @@ The information we gather is what you supply us with when partner and work with 
 
                       <div className="Us-con2">
                       <h1>Our Mission</h1>
-                      <p>Our mission is to Continously grow my skills in software development and solving real-world problems through code
+                      <p>Our mission is to Continously grow the Compaines skills and abilities in software development and solving real-world problems through code
                          We strive to deliver Web development, Cyber Security, Digital Marketing, Web Hosting  with a focus on  customer satisfaction, innovation, and sustainability.
                       </p>
                       </div>
@@ -424,7 +424,7 @@ to make a difference, Creating Impactful Application, Solving Problems Through C
                       <div className="Us-con3">
                       <h1>Our Vision</h1>
                       <p>To become a skilled and innovative software engineer, creating impactful, efficient, and user-friendly applications that solve real-world problems.
-                         I aim to continuously learn, grow, and contribute to the tech community while building high-quality digital experiences.
+                         We aim to continuously learn, grow, and contribute to the tech community while building high-quality digital experiences.
 
 </p>
                       </div>
@@ -468,7 +468,7 @@ to make a difference, Creating Impactful Application, Solving Problems Through C
                       </h1>
                       <p>We believe in building lasting relationships with our customers, partners, and community. 
                         Whether you’re here to  explore our offerings, learn about us, or collaborate, 
-                        we are excited to welcome you into the DMZ family.
+                        we are excited to welcome you into the DMZ community.
                       </p>
                       </div>
 
@@ -486,7 +486,7 @@ to make a difference, Creating Impactful Application, Solving Problems Through C
                     <div className="Choose-Us">
                       <div className="explain-choose">
                         <p className="pcose">
-                          THE DEFFERENCE WE MAKE
+                          THE DIFFERENCE WE MAKE
                         </p>
                       <h1>Why Choose Us</h1>
 
