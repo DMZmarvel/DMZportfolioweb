@@ -399,9 +399,14 @@
   justify-content:last baseline;
  align-self: last baseline;
   align-items: center;
-  padding: 0em 0;
+  padding: 0em 0em;
   cursor: pointer;
   outline: none;
+}
+.inside2 .xx2:hover{
+  font-size: 1.7em;
+  color: var(--AQUA--);
+  
 }
 
 .inside2 .insbtn2{
