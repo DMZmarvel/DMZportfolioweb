@@ -345,7 +345,7 @@
   justify-content: center;
   padding: 0.5em;
   color: var(--WHITE--);
-  background: transparent;
+  background: none;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   border: 1px solid var(--AQUA--);
@@ -391,15 +391,19 @@
     
 }
 .inside2 .xx2{
-  width: 80%;
+  width: auto;
   height: auto;
+  padding: 0.5em;
   font-size: 2em;
   text-align: right;
   justify-content:last baseline;
+ align-self: last baseline;
   align-items: center;
   padding: 0em 0;
   cursor: pointer;
+  outline: none;
 }
+
 .inside2 .insbtn2{
   width: 170px;
   height: 40px;
@@ -674,14 +678,14 @@
 
   .inputs2 .smallscr2{
     display: flex;
-   
+    background-color: transparent;
     font-size: 1.5em;
     border: none;
-   padding: 2px;
+    margin: 1.2em 0;
     align-items: center;
     text-align: center;
    cursor: pointer;
-   
+   height: 30%;
   }
 
 
@@ -789,14 +793,17 @@
 
 
   .inputs2 .smallscr2{
-    display: flex;
-   
-    font-size: 1.5em;
-    border: none;
-   padding: 2px;
-    align-items: center;
-    text-align: center;
-   cursor: pointer;
+  
+
+   display: flex;
+   background-color: transparent;
+   font-size: 1.5em;
+   border: none;
+   margin: 1.2em 0;
+   align-items: center;
+   text-align: center;
+  cursor: pointer;
+  height: 30%;
    
   }
 

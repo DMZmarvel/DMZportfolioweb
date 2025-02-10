@@ -431,19 +431,19 @@ to make a difference, Creating Impactful Application, Solving Problems Through C
 
                       <div className="Us-con4">
                       <h1>What We Offer</h1>
-                      <p>1. Front-End Development – Crafting intuitive and visually appealing user interfaces using React.
+                      <p>` Front-End Development – Crafting intuitive and visually appealing user interfaces using React.
 <br />
 
-2. Problem-Solving – Writing clean, efficient code to solve challenges and improve user experience.
+` Problem-Solving – Writing clean, efficient code to solve challenges and improve user experience.
 
 <br />
-3. Continuous Learning – Adapting to new technologies and best practices to stay ahead in the industry.
+` Continuous Learning – Adapting to new technologies and best practices to stay ahead in the industry.
 <br />
 
-4. Portfolio Projects – Showcasing skills through real-world applications, demonstrating both front-end and future back-end capabilities.
+` Portfolio Projects – Showcasing skills through real-world applications, demonstrating both front-end and future back-end capabilities.
 <br />
 
-5. User-Centered Design – Ensuring applications are accessible, responsive, and enjoyable to use.
+` User-Centered Design – Ensuring applications are accessible, responsive, and enjoyable to use.
 
 
                       </p>

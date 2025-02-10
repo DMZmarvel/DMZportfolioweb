@@ -701,7 +701,6 @@
 
 
 .nav{
-  background-color: var(--BLACK--);
   height: 100vh;
   max-width: 100%;
   display: flex;
@@ -709,7 +708,7 @@
   align-items:center;
   justify-content: center;
   position: relative;
-
+ background-color: var(--BLACK--);
 }
 
 .nav .toone{
@@ -939,6 +938,7 @@ return (
   border-bottom-left-radius: 2em;
   border: 1px solid var(--AQUA--);
   padding: 0.3em;
+  color: black;
   z-index: 1;
   overflow: hidden;
   transition: 2.5s;
@@ -946,8 +946,8 @@ return (
 
 
 .social a .icons:hover{
-  color: var(--AQUA--);
-  background-color: var(--GRAY--);
+  color: var(--WHITE--);
+  background-color: var(--AQUA--);
   border-top-left-radius: 2em;
   border-top-right-radius: 2em;
       border-bottom-right-radius: 1em;
@@ -1000,8 +1000,8 @@ return (
     position: absolute;
     width: 50px;
     height: 50px;
-    top: 37%;
-    right: 50%;
+    top: 27%;
+    right: 60;
     border-radius: 50%;
   }
   .dot1{
@@ -1567,12 +1567,12 @@ return (
 
 
 
-  @media  (min-width:501px) and (max-width:1200px){
+  @media  (min-width:501px) and (max-width:999px){
    
 
     .nava .navchange{
       justify-content: space-between;
-      padding: 0 0em 0 2em;
+      padding: 0 0 0 0;
      
     }
     .logo h1{
@@ -1605,11 +1605,12 @@ return (
     }
 
     .nav{
-      min-height: 140vh;
+      min-height: 150vh;
     }
     .nav .toone{
       height: 95%;
-      
+  
+      position: relative;
     }
 
     .toone .header{
@@ -1625,7 +1626,9 @@ return (
       height: 50%;
       padding:  0 0 0 0;
       gap: 0.2em;
+    
     }
+    
     .hi .appir{
       height: 40%;
       width: 100%;
@@ -1648,19 +1651,20 @@ return (
       font-size: 0px;
     }
     .hi .btn-box{
-      height: 20%;
+      height: 30%;
       justify-content: center;
       padding: 0 0 0 0;
       margin-top: 0em;
+      
     }
     
     
   .btn-box .chat-me{
-    width: 25%;
-    height: 40%;
+    width: 200px;
+    height: 55px;
     border: none;
-    top: 80px;
-    left: -400px;
+    top: 0px;
+    left: -500px;
     border-top-right-radius: 0em;
  border-bottom-left-radius: 0.5em;
  border-bottom-right-radius: 0.5em;
@@ -1673,7 +1677,8 @@ return (
 
 
     .btn-box .smallsc{
-      height: 60%;
+      height: 60px;
+      width: 180px;
     }
 
     .header .satisfactory{
@@ -1682,6 +1687,7 @@ return (
       gap: 1em;
       height: 25%;
       text-align: center;
+     
     }
   
     .satisfactory .tory0{
@@ -1692,6 +1698,7 @@ return (
       border-bottom-left-radius: 10px;
       gap: 0.2em;
       border: 1px solid var(--QUA--);
+
     }
 
 
@@ -1704,14 +1711,18 @@ return (
      height: 50%;
    }
    .imageside .imgcontainer{
-    width: 100%;
+    width: 70%;
     height: 90%;
-    background-size: contain;
+    background-size: cover;
     justify-content: right;
+    border: none;
+    border-radius: 5%;
+    border: 3px solid var(--AQUA--);
+    padding: 1em;
    }
    .imgcontainer .social{
-    position: relative;
-    width: 45%;
+    position: unset;
+    width: 15%;
     height: 100%;
     gap: 0.2em;
     z-index: -10;
@@ -1722,7 +1733,82 @@ return (
     height: 30px;
       width: 100px;
       padding: 0.1em;
+      border: none;
    }
   }
 
+
+  @media  (min-width:999px) and (max-width:1517px){
+
+    .nav{
+      height: 100vh;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content: center;
+      position: relative;
+    }
+    
+.hi .appir{
+  width:85% ;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+ text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--body-font);
+  background-color: var(--BLACK--);
+  overflow: hidden;
+  border-top-left-radius: 0em;
+  border-bottom-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+
+  }
+  
+.appir .text{
+  position: relative;
+   
+    font-size: 50px;
+  font-family: var(--body-font);
+  font-weight: 600;
+ 
+}
+.hi .btn-box{
+  height: 30%;
+}
+.appir .first-text span{
+  color: var(--AQUA--);
+  font-size: 1.8em;
+}
+
+.btn-box .smallsc{
+  height: 60px;
+}
+.appir .text.first-text{
+  color: var(--GRAY--);
+  font-family: var(--body-font);
+  font-size: 1.5em;
+}
+
+ .appir .text.snd-text{
+  font-size: 1.5em;
+  color: var(--AQUA--);
+ }
+ .btn-box .chat-me{
+    top: 0;
+    height: 50px;
+    border-top-left-radius: 0em;
+ border-top-right-radius: 0.5em;
+ border-bottom-left-radius: 0.5em;
+ border-bottom-right-radius: 0.5em;
+ }
+ .header .satisfactory{
+  height: 25%;
+ }
+ .satisfactory .tory0{
+  border: none;
+ }
+  }
   
