@@ -295,7 +295,7 @@ export const Footer = ({ language}) => {
                     <div className="polic1">
                        <div className="inspo1">Personal Statement  </div>
                        <div className="inspo2">We are committed to creating a secure and user-friendly experience for every customer. To achieve this, we aim to be as clear as possible about all our policies, as is evident by our transparent Terms and Conditions.
-                       When you visit our site, skilltwins.com, some of your personal information supplied during your order or by means of our cookies policy may be gathered.
+                       When you visit our site, Jenga Tech.com, some of your personal information supplied during your order or by means of our cookies policy may be gathered.
 
 
                        </div>
@@ -329,7 +329,7 @@ Any information we gather is only shared with our affiliate partners for analyti
                     <div className="polic5">
                        <div className="inspo1">What information do we gather specifically?</div>
                        <div className="inspo2">
-The information we gather is what you supply us with when signing up for a newsletter or making a purchase. This is usually demographic information like name, address, or general contact information.
+The information we gather is what you supply us with when partner and work with us. This is usually demographic information like name, address, or general contact information.
  Cookies will also gather session information like the pages viewed, the amount of time spent in the session, transactions, and any other general demographic information eg (origin, gender, age).
 </div>
                     </div>
