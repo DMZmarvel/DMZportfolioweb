@@ -14,7 +14,7 @@ const contactTranslations = {
    ptext2:"We'll create high-quality linkable content and build at least 40 high-authority links to each assets, paving the way for you to  grow your rankings, improve brands.",
    pimo:"Imo State, Nigeria",
    pnum:"+234-242-631-21",
-   pmail:"DMZmarvel@enterprice.com",
+   pmail:"destinmarvel3@gamil.com",
    pfollow:"Follow us on",
    label1:"Name",
    label2:"Email",

@@ -82,6 +82,7 @@
     height: 40%;
     padding: 1em 1.7em;
     display: flex;
+    
     flex-direction: column;
     gap: 0.5em;
 }
@@ -298,7 +299,7 @@
     }
     .my-text1 .FName{
      
-      
+     
       border-bottom: 2px solid var(--AQUA--);
       font-size: 0.8em;
       justify-content: left;
@@ -395,7 +396,7 @@
 
 
 
-  @media  (min-width:601px) and (max-width:900px){
+  @media  (min-width:601px) and (max-width:1000px){
 
     .main-About{
       height: 150vh;
@@ -428,7 +429,7 @@
 
     
     .first-about .my-text1{
-      width: 45%;
+      width: 55%;
       height: 100%;
       gap: 1em;
       padding: 1em 1em;
@@ -439,6 +440,7 @@
      border-bottom-right-radius: 2em;
      border-bottom-left-radius: 2em;
      border: 1px solid var(--AQUA--);
+     border: none;
     }
     .my-text1 .FName{
       border-bottom: 2px solid var(--AQUA--);
@@ -519,3 +521,20 @@
   }
 
   }
+
+  
+@media  (min-width:1001px) and (max-width:1450px){
+
+  .main-About{
+    height: 140vh;
+  }
+  .first-about .my-text1{
+    padding: 1em;
+  }
+  .my-text1 .FName{
+    width: 80%;
+  }
+  .first-about1 .experties {
+    width: 85%;
+  }
+}
