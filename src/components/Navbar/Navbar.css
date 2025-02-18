@@ -1273,14 +1273,14 @@ return (
   background-size: cover;
   justify-content: right;
  
-  border-top-right-radius: 0em;
+  border-top-right-radius: 2em;
   border-top-left-radius: 2em; 
 
     border:none;
     overflow: hidden;
 
     
-    border-top: 0.2em solid var(--AQUA--);
+    border-right: 0.2em solid var(--AQUA--);
     border-left: 0.2em solid var(--AQUA--);
  }
  .imgcontainer .social{
