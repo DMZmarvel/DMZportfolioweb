@@ -554,7 +554,7 @@
   transition: 2s ease;
   gap: 0.2em;
  display: flex;
- left: -200px;
+ left: -250px;
  border: 2px solid var(--AQUA--);
  border-top-left-radius: 0em;
  border-top-right-radius: 2em;
@@ -736,6 +736,7 @@ display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 }
 .imageside .imgcontainer{
   width: 80%;
@@ -746,13 +747,14 @@ display: flex;
   justify-content: left;
   background-size:cover;
   background-repeat: no-repeat;
-  background-image:url(../../../public/image/IMG_20240702_220919_784.jpg) ;
+  background-image:url(../../../public/image/IMG_20240702_220919_784-removebg-preview.png) ;
   mix-blend-mode: darken;
   background-position: center;
-  border-top-left-radius: 2em;
-      border-bottom-right-radius: 2em;
-      border-bottom-left-radius: 2em;
-      border: 1px solid var(--AQUA--);
+  border-top-right-radius: 2em;
+      border: none;
+    
+      border-top: 0.2em solid var(--AQUA--);
+      border-right: 0.2em solid var(--AQUA--);
 }
 
 /*
@@ -763,7 +765,7 @@ display: flex;
 
 
 export const Navbar = () => {
-
+https://x.com/Lucasaustin07?t=3h69RvXOq4URAfd_ymtMnw&s=09
   
   const [showMenu, setShowMenu] = useState(false);
   const [language, setLanguage] = useState("en");
@@ -938,7 +940,7 @@ return (
   border-bottom-left-radius: 2em;
   border: 1px solid var(--AQUA--);
   padding: 0.3em;
-  color: black;
+  color: var(--AQUA--);
   z-index: 1;
   overflow: hidden;
   transition: 2.5s;
@@ -946,13 +948,13 @@ return (
 
 
 .social a .icons:hover{
-  color: var(--WHITE--);
-  background-color: var(--AQUA--);
+  color: var(--GRAY--);
+  background-color: var(--BLACK--);
   border-top-left-radius: 2em;
   border-top-right-radius: 2em;
       border-bottom-right-radius: 1em;
       border-bottom-left-radius: 0em;
-      border: 1px solid var(--WHITE--);
+      border: 1px solid var(--AQUA--);
 }
 
 .social a .icons::before{
@@ -1270,12 +1272,16 @@ return (
   height: 80%;
   background-size: cover;
   justify-content: right;
-  border-top-left-radius: 2em;
-  border-top-right-radius: 0;
-    border-bottom-right-radius: 2em;
-    border-bottom-left-radius: 2em;
-    border: 2px solid var(--AQUA--);
+ 
+  border-top-right-radius: 0em;
+  border-top-left-radius: 2em; 
+
+    border:none;
     overflow: hidden;
+
+    
+    border-top: 0.2em solid var(--AQUA--);
+    border-left: 0.2em solid var(--AQUA--);
  }
  .imgcontainer .social{
   position: relative;
@@ -1286,12 +1292,12 @@ return (
    
  }
  .social a .icons{
-  height: 30px;
-    width: 30px;
+  height: 25px;
+    width: 25px;
     padding: 0.1em;
-    border-top-left-radius: 0.5em;
-    border-bottom-right-radius: 0.8em;
-    border-bottom-left-radius: 0.8em;
+    border-top-left-radius: 0.1em;
+    border-bottom-right-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
     border: none;
  }
  .social a .icons:hover{
@@ -1518,12 +1524,14 @@ return (
     height: 80%;
     background-size: cover;
     justify-content: right;
-    border-top-left-radius: 2em;
-    border-top-right-radius: 0;
-      border-bottom-right-radius: 2em;
-      border-bottom-left-radius: 2em;
-      border: 2px solid var(--AQUA--);
+    border-top-right-radius: 0em;
+    border-top-left-radius: 1em;
+     
+      border: none;
       overflow: hidden;
+
+      border-top: 0.2em solid var(--AQUA--);
+    border-left: 0.2em solid var(--AQUA--);
    }
    .imgcontainer .social{
     position: relative;
@@ -1533,12 +1541,12 @@ return (
     z-index: -10;
    }
    .social a .icons{
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     padding: 0.1em;
     border-top-left-radius: 0.5em;
-    border-bottom-right-radius: 0.8em;
-    border-bottom-left-radius: 0.8em;
+    border-bottom-right-radius: 0em;
+    border-bottom-left-radius: 0em;
     border: none;
    }
   

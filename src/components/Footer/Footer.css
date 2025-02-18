@@ -357,11 +357,14 @@ animation-fill-mode: forwards;
   align-items: center;
   text-align: center;
   justify-content: center;
-  border-top: 1px solid var(--GRAY--);
   backdrop-filter: blur(20px);
   background-color: #ffffff15;
   border-bottom-right-radius:10px ;
   border-bottom-left-radius:10px ;
+    border-top: transparent;
+    border-left: 2px solid var(--AQUA--);
+    border-right: 2px solid var(--AQUA--);
+    border-bottom: 2px solid var(--AQUA--);
 }
 .insidefoter2 p{
   text-align: center;

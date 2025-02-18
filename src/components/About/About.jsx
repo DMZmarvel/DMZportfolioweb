@@ -35,7 +35,8 @@ export const About = () => {
           <p className="intro">
                Hi, I'm <span>Destin marvel</span>, am a passionate and dedicated software developer,
                With 3 Years of exprience as a professional developer, i have acquired the 
-               skill necessary to build great and premium websites, mobile apps, accounts... 
+               skill necessary to build great and premium websites, mobile apps, accounts.
+               <br />
                <br />
                I enjoy crafting intuitive and functional solution to complex problems
           </p>
