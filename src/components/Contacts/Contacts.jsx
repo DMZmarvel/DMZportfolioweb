@@ -132,6 +132,11 @@ if (!name || !email || !message)
                   setStatus('FAILED... No network check your connections').style.color = 'red';
                 }
         );
+
+
+        document.getElementById("username").value = "";
+         document.getElementById("useremail").value = "";
+          document.getElementById("message").value = "";
       };
 
 
@@ -190,13 +195,13 @@ if (!name || !email || !message)
                 <form ref={form} onSubmit={sendEmail}>
 
                 <label>{c.label1}</label>
-                 <input className='name' type="text" name="user_name" placeholder={c.placeholder} required/>
+                 <input className='name' type="text" id='username' name="user_name" placeholder={c.placeholder} required/>
 
                 <label>{c.label2}</label>
-                 <input className='email' type="email" name="user_email" placeholder={c.placeholder0}  required/>
+                 <input className='email' type="email" id='useremail' name="user_email" placeholder={c.placeholder0}  required/>
 
                 <label>{c.label3}</label>
-                <textarea name="message"  placeholder={c.placeholder1}  required/>
+                <textarea name="message" id='message'  placeholder={c.placeholder1}  required/>
 
                 <input className='message' type="submit" value={c.value} />
 

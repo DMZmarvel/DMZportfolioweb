@@ -63,7 +63,7 @@ export const App = () => {
       </Suspense> 
         <Footer language={language}/>
        
-
+    
         </div>
      </Router>
  

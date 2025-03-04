@@ -189,7 +189,7 @@
   }
   form .name{
     width: 90%;
-    height: 70px;
+    height: 50px;
     background: transparent;
     outline: none;
     border: none;
@@ -202,12 +202,18 @@
    margin-bottom: 1em;
     border: 2px solid var(--AQUA--);
     border-top-left-radius: 2em;
-    border-bottom-right-radius: 2em;
-    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
+    border-bottom-left-radius: 2em;
+    border-right: none;
   }
+.name:placeholder-shown{
+  color: var(--AQUA--);
+}
+
+
   form .email{
     width: 90%;
-    height: 70px;
+    height: 50px;
     background: transparent;
     outline: none;
     border: none;
@@ -219,14 +225,20 @@
     color: var(--WHITE--);
    margin: 0em 0 1em 0;
     border: 2px solid var(--AQUA--);
-    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
     border-bottom-right-radius: 2em;
     border-bottom-left-radius: 0em;
+    border-left: none;
   }
+  
+.email:placeholder-shown{
+  color: var(--AQUA--);
+}
+
   form textarea{
     width: 90%;
     max-width: 90%;
-    height: 250px;
+    height: 200px;
     background: transparent;
     outline: none;
     border: none;
@@ -240,9 +252,15 @@
     padding: 1em 1em;
     border: 2px solid var(--AQUA--);
     border-top-left-radius: 2em;
-    border-bottom-right-radius: 2em;
-    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
+    border-bottom-left-radius: 2em;
+    border-right: none;
   }
+  
+  textarea:placeholder-shown{
+  color: var(--AQUA--);
+}
+
   form .message{
     width: 50%;
     height: 50px;
