@@ -1218,6 +1218,7 @@ return (
     border: none;
     top: 55px;
     left: -230px;
+    background-color: transparent;
     border-top-right-radius: 0em;
  border-bottom-left-radius: 0.5em;
  border-bottom-right-radius: 0.5em;
@@ -1470,6 +1471,7 @@ return (
     border: none;
     top: 65px;
     left: -230px;
+    background-color: transparent;
     border-top-right-radius: 0em;
  border-bottom-left-radius: 0.5em;
  border-bottom-right-radius: 0.5em;
@@ -1662,7 +1664,9 @@ return (
     }
     .hi .btn-box{
       height: 30%;
+      background-color: sandybrown;
       justify-content: center;
+      align-items: unset;
       padding: 0 0 0 0;
       margin-top: 0em;
       
@@ -1673,7 +1677,8 @@ return (
     width: 200px;
     height: 55px;
     border: none;
-    top: 0px;
+    background-color: transparent;
+    top: 50px;
     left: -500px;
     border-top-right-radius: 0em;
  border-bottom-left-radius: 0.5em;
@@ -1687,7 +1692,7 @@ return (
 
 
     .btn-box .smallsc{
-      height: 60px;
+      height: 50px;
       width: 180px;
     }
 

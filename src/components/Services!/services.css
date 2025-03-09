@@ -502,9 +502,9 @@
   }
   }
 
-  @media  (min-width:501px) and (max-width:900px){
+  @media  (min-width:501px) and (max-width:999px){
     .service{
-      height: 120vh;
+      height: 140vh;
     }
     .seriveshold2 .services-1{
       flex-direction: column;
@@ -564,5 +564,14 @@
       border-bottom-right-radius: 2em;
       border-bottom-left-radius: 2em;
       border: 1px solid var(--AQUA--);
+    }
+  }
+
+  @media  (min-width:999px) and (max-width:1317px){
+    .services-1 .ido1{
+      padding: 0.5em 1em;
+    }
+    .services-2 .ido1{
+      padding: 0.5em 1em;
     }
   }

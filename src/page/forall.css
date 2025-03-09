@@ -133,18 +133,44 @@
   align-items:center;
   justify-content: right;
 }
-.links2 p{
+
+
+
+.links2 a {
+  position: relative;
+  text-decoration: none;
   font-size: var(--normal-font-size);
-  font-weight: bold;
   font-family: var(--body-font);
   color: var(--WHITE--);
-  border-bottom: 2px solid transparent;
-  transition: 2s ease;
+  display: block;
+  padding:0 0 0 10px;
+  text-align: center;
+  transition: color 3s ease-in-out;
+ 
 }
 
-.links2 p:hover, .links2 .active{
-  border-bottom: 2px solid var(--AQUA--);
+.links2 a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 1px dashed transparent;
+  border-bottom: 1px dashed transparent;
+  border-left: 5px solid transparent;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: width 2s ease-in-out, height 1.5s ease-in-out, border-color 2s ease-in-out;
 }
+
+.links2 a.active::after {
+  width: 100%;
+  height: 100%;
+  border-color: var(--AQUA--);
+  transition: width 2s ease-in-out, height 0.5s ease-in-out, border-color 2s ease-in-out;
+}
+
 
 
 
@@ -366,12 +392,12 @@
   width: 301px;
   height: 400px;
   top: 0;
-  right: -331px;
+  right: -390px;
   z-index: 2;
   background-color: var(--BLACK--);
   align-items: center;
   justify-content: center;
-  transition: right  1.4s ease-in-out;
+  transition: right  1.7s ease-in-out;
 }
 .sidebar2.open{
   right: 0;
@@ -434,13 +460,15 @@
   flex-direction: column;
   justify-content: center;
   font-family: var(--body-font);
-  gap: 1em;
+  gap: 0.7em;
   width: 63%;
   height: 50%;
  align-items: center;
+
   border-radius: 10px;
 }
 
+/*
 .linkss2 p{
   font-size: var(--normal-font-size);
   font-family: var(--body-font);
@@ -451,6 +479,44 @@
   border-bottom: 2px solid var(--AQUA--);
   color: var(--WHITE--);
 }
+*/
+
+.linkss2 a {
+  position: relative;
+  text-decoration: none;
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  color: var(--WHITE--);
+  display: block;
+  padding: 3px 15px;
+  text-align: center;
+  transition: color 3s ease-in-out;
+ 
+}
+
+.linkss2 a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: width 2s ease-in-out, height 1s ease-in-out, border-color 2s ease-in-out;
+}
+
+.linkss2 a.active::after {
+  width: 100%;
+  height: 100%;
+  border-color: var(--AQUA--);
+  transition: width 2s ease-in-out, height 0.5s ease-in-out, border-color 2s ease-in-out;
+}
+
+
 
 
 /* Time Clock */

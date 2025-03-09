@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 import {  FaXmark, FaBars, FaWifi } from "react-icons/fa6";
-import { Link } from "react-router-dom"
+import { Link , useLocation} from "react-router-dom"
 import '../page/forall.css'
 
 
@@ -142,64 +142,14 @@ useEffect(() => {
 
    return () => document.removeEventListener("mousedown", handleClickOutside);
 }, [isOpen]);
-{/*
 
-  const showSidebar = () => {
-   const smallscr2 = document.querySelector ('.sidebar2');
-       smallscr2.style.right = '0px';
-};
-       const hideSidebar = () => {
-        const smallscr2 = document.querySelector ('.sidebar2');
-            smallscr2.style.right = '-800px';
 
-};
+const [activeLink, setActiveLink] = useState("/");
+const location = useLocation();
 
-document.addEventListener('DOMContentLoaded', () => {
-
-const $ = (selector) => document.querySelector(selector);
-  
-
-const timedot = $('.timedot');
-const timemin = $('.timemin');
-const weak = $('.weak');
-let showDot = true;
-
-function update() {
- if (!timedot || !timemin || !weak){
-    console.error("One or more elements are missing from the DOM. ");
-  return;
- }
-
-  showDot = !showDot;
-  const now = new Date();
-
-  if (showDot) {
-    timedot.classList.add('invsible');
-  } else{
-    timedot.classList.remove('invsible');
-  }
-const timehour = $('.timehour');
-
-if (timehour)
-         timehour.textContent = String(now.getHours()).padStart(2, '0');
-         timemin.textContent = String(now.getMinutes()).padStart(2, '0');
-
-    Array.from(weak.children).forEach((ele) => {
-              ele.classList.remove('active9');
-});
-
-   const dayIndex = now.getDay();
-     if (weak.children[dayIndex]) {
-      weak.children[dayIndex].classList.add('active9');
-     }
-}
-function update() {
-  console.log("Update function called");
-}
-
-setInterval(update, 1000);
-});
-*/}
+useEffect(() => {
+    setActiveLink(location.pathname);
+}, [location]);
 
 
 
@@ -287,13 +237,35 @@ const days = ["SUN", "MON", "TUE", "WED", "THUR", "FRI", "SAT"]
 
 
             <div className="links2">
-            <Link to="/" className='active'><p>Header</p></Link> 
+            {/*<Link to="/" className='active'><p>Header</p></Link> 
               <Link to="/AboutRut"><p>About</p></Link> 
              
               <Link to="/SkillRut"><p>Skills</p></Link> 
               <Link to="/ServicesRut"><p>Service</p></Link> 
               <Link to="/ProjectRut"><p>Project</p></Link> 
-              <Link to="/TestimonialRut"><p>Testimonials</p></Link> 
+              <Link to="/TestimonialRut"><p>Testimonials</p></Link> */}
+
+
+                
+            <Link to="/" className={activeLink === "/" ? "active" : ""} >
+                <p>Header</p>
+            </Link>
+            <Link to="/AboutRut" className={activeLink === "/AboutRut" ? "active" : ""} >
+                <p>About</p>
+            </Link>
+            <Link to="/SkillRut" className={activeLink === "/SkillRut" ? "active" : ""} >
+                <p>Skills</p>
+            </Link>
+            <Link to="/ServicesRut" className={activeLink === "/ServicesRut" ? "active" : ""}>
+                <p>Service</p>
+            </Link>
+            <Link to="/ProjectRut" className={activeLink === "/ProjectRut" ? "active" : ""}>
+                <p>Project</p>
+            </Link>
+            <Link to="/TestimonialRut" className={activeLink === "/TestimonialRut" ? "active" : ""} >
+                <p>Testimonials</p>
+            </Link>
+       
 
             </div>
       
@@ -371,13 +343,39 @@ const days = ["SUN", "MON", "TUE", "WED", "THUR", "FRI", "SAT"]
       
       
               <div className="linkss2">
-              <Link to="/" className='active' onClick={hideSidebar1}><p>Header</p></Link> 
+            {/* <Link to="/" className='active' onClick={hideSidebar1}><p>Header</p></Link> 
               <Link to="/AboutRut" onClick={hideSidebar1}><p>About</p></Link> 
               <Link to="/SkillRut" onClick={hideSidebar1}><p>Skills</p></Link> 
               <Link to="/ServicesRut" onClick={hideSidebar1}><p>Service</p></Link> 
               <Link to="/ProjectRut" onClick={hideSidebar1}><p>Project</p></Link> 
               <Link to="/TestimonialRut" onClick={hideSidebar1}><p>Testimonials</p></Link>
-             
+             */}
+
+            
+<Link to="/" className={activeLink === "/" ? "active" : ""} onClick={() => { setActiveLink("/"); hideSidebar1(); }}>
+                <p>Header</p>
+            </Link>
+            <Link to="/AboutRut" className={activeLink === "/AboutRut" ? "active" : ""} onClick={() => { setActiveLink("/AboutRut"); hideSidebar1(); }}>
+                <p>About</p>
+            </Link>
+            <Link to="/SkillRut" className={activeLink === "/SkillRut" ? "active" : ""} onClick={() => { setActiveLink("/SkillRut"); hideSidebar1(); }}>
+                <p>Skills</p>
+            </Link>
+            <Link to="/ServicesRut" className={activeLink === "/ServicesRut" ? "active" : ""} onClick={() => { setActiveLink("/ServicesRut"); hideSidebar1(); }}>
+                <p>Service</p>
+            </Link>
+            <Link to="/ProjectRut" className={activeLink === "/ProjectRut" ? "active" : ""} onClick={() => { setActiveLink("/ProjectRut"); hideSidebar1(); }}>
+                <p>Project</p>
+            </Link>
+            <Link to="/TestimonialRut" className={activeLink === "/TestimonialRut" ? "active" : ""} onClick={() => { setActiveLink("/TestimonialRut"); hideSidebar1(); }}>
+                <p>Testimonials</p>
+            </Link>
+       
+
+
+
+
+
             </div>
               </div>
             </div>
