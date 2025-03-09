@@ -154,9 +154,9 @@ height: 300px;
 color: #f9f9f9;
 background-color: transparent;
 border-top-left-radius: 2em;
-border-bottom-right-radius: 2em;
+border-top-right-radius: 2em;
 border-bottom-left-radius: 2em;
-border: 1px solid var(--AQUA--);
+border-top: 6px double var(--AQUA--);
 }
 
 
@@ -202,16 +202,17 @@ border: 1px solid var(--AQUA--);
   align-self: first baseline;
   justify-self: start;
   border-top-left-radius: 2em;
-  border-bottom-right-radius: 2em;
+  
   border-bottom-left-radius: 2em;
   border: 1px solid var(--AQUA--);
+  border-right: transparent;
  
 }
 .per .perimg{
   width: 20%;
   height: 70%;
   border-radius: 50%;
-  border: 1px solid var(--AQUA--);
+
   background-image:url(../../../public/image/userimg.png) ;
   background-repeat: no-repeat;
   background-size: cover;

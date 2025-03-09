@@ -169,7 +169,7 @@ function scrollr(){
               
               <div className="rating">
               <p>{tr.johnp}</p>
-              <label className="star5">★★★★<span>★</span></label>
+              <label className="star5">★★★★★<span></span></label>
            </div>
 
               <div className="per">
@@ -207,7 +207,7 @@ function scrollr(){
               <div className="rating">
               <p>{tr.brownp}</p>
 
-              <label className="star5">★★★★<span>★</span></label>
+              <label className="star5">★★★★★<span></span></label>
            </div>
 
               <div className="per">
@@ -225,7 +225,7 @@ function scrollr(){
               <div className="rating">
               <p>{tr.sophip}</p>
 
-              <label className="star5">★★★★<span>★</span></label>
+              <label className="star5">★★★<span>★★</span></label>
            </div>
 
               <div className="per">
@@ -263,7 +263,7 @@ function scrollr(){
               <div className="rating">
               <p>{tr.danelp}</p>
 
-              <label className="star5">★★★★<span>★</span></label>
+              <label className="star5">★★★<span>★★</span></label>
            </div>
 
               <div className="per">
