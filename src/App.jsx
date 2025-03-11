@@ -1,6 +1,6 @@
 import './App.css'
 import useLocalStorage from "use-local-storage";
-import React, { useState, Suspense, lazy } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar/Navbar';
@@ -34,6 +34,30 @@ export const App = () => {
 
     const handleLanguageChange = (lang) => {
          setLanguage(lang);
+
+
+         useEffect(() => {
+          const userKey = "userId"; 
+          let userId = localStorage.getItem(userKey);
+  
+          // Generate a unique user ID if user is new
+          if (!userId) {
+              userId = "user_" + Math.random().toString(36).substr(2, 8); 
+              localStorage.setItem(userKey, userId);
+          }
+  
+          // Send visit data to your backend
+          fetch("https://your-backend-url.com/log-visit", {  // Replace with your backend URL
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                  userId: userId,
+                  timestamp: new Date().toISOString()
+              })
+          }).catch(error => console.error("Error logging visit:", error));
+  
+      }, []); // Runs only once when the app loads
+  
     };
 
   return (
