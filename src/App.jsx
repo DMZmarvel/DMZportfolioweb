@@ -47,7 +47,7 @@ export const App = () => {
           }
   
           // Send visit data to your backend
-          fetch("http://localhost:7000/log-visit", {  // Replace with your backend URL
+          fetch("https://localhost:7000/log-visit", {  // Replace with your backend URL
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({
