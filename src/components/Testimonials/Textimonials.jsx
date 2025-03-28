@@ -175,8 +175,9 @@ function scrollr(){
               <div className="per">
                 <div className="perimg"></div>
                 <div className="tex">
+                <p className="tax1">{tr.johnname}</p>
                   <p className="tax2">john.smith@example.com
-                  <p className="tax1">{tr.johnname}</p>
+                 
                   </p>
                 </div>
               

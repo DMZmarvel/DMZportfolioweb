@@ -34,9 +34,9 @@ function Skills() {
                 </div>
 
                 <div className="rating">
-                    <p className='Num'>80%</p>
-                    <div className="shown">
-                    <div className="current"></div>
+                    <div className="skill-name">Javascript</div>
+                    <div className="skill-bar">
+                        <div className="skill-per" per="95%" ></div>
                     </div>
                 </div>
             
@@ -54,9 +54,9 @@ function Skills() {
                 </div>
 
                 <div className="rating4">
-                    <p className='Num4'>89%</p>
-                    <div className="shown4">
-                    <div className="current"></div>
+                <div className="skill-name">React Js</div>
+                    <div className="skill-bar4">
+                        <div className="skill-per" per="87%" ></div>
                     </div>
                 </div>
             
@@ -76,9 +76,9 @@ function Skills() {
                 </div>
 
                 <div className="rating3">
-                    <p className='Num3'>70%</p>
-                    <div className="shown3">
-                    <div className="current"></div>
+                <div className="skill-name">Python</div>
+                    <div className="skill-bar3">
+                        <div className="skill-per" per="88%" ></div>
                     </div>
                 </div>
             
@@ -98,9 +98,9 @@ function Skills() {
                 </div>
 
                 <div className="rating2">
-                    <p className='Num2'>95%</p>
-                    <div className="shown2">
-                    <div className="current2"></div>
+                <div className="skill-name">Html | Css</div>
+                    <div className="skill-bar2">
+                        <div className="skill-per" per="97%" ></div>
                     </div>
                 </div>
             
