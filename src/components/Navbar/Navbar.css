@@ -691,11 +691,11 @@ svg text {
   left: -50%;
   background: linear-gradient(
     0deg,
-    white,
-    transparent,
-    #45f3ff,
-    #45f3ff,
-    #45f3ff
+    var(--AQUA--),
+    var(--WHITE--),
+    var(--AQUA--),
+    var(--AQUA--),
+    var(--AQUA--)
   );
   z-index: 1;
   transform-origin: bottom right;
@@ -710,11 +710,11 @@ svg text {
   left: -50%;
   background: linear-gradient(
     0deg,
-    white,
-    transparent,
-    #45f3ff,
-    #45f3ff,
-    #45f3ff
+    var(--AQUA--),
+    var(--WHITE--),
+    var(--AQUA--),
+    var(--AQUA--),
+    var(--AQUA--)
   );
   z-index: 1;
   transform-origin: bottom right;
@@ -733,7 +733,14 @@ svg text {
   height: 240px;
   top: -50%;
   left: -50%;
-  background: linear-gradient(0deg, white, transparent, white, white, white);
+  background: linear-gradient(
+    0deg,
+    var(--WHITE--),
+    var(--BLACK--),
+    var(--WHITE--),
+    var(--WHITE--),
+    var(--WHITE--)
+  );
 
   z-index: 1;
   transform-origin: bottom right;
@@ -747,7 +754,14 @@ svg text {
   height: 240px;
   top: -50%;
   left: -50%;
-  background: linear-gradient(0deg, white, transparent, white, white, white);
+  background: linear-gradient(
+    0deg,
+    var(--WHITE--),
+    var(--BLACK--),
+    var(--WHITE--),
+    var(--WHITE--),
+    var(--WHITE--)
+  );
   z-index: 1;
   transform-origin: bottom right;
   animation: animate 6s linear infinite;
