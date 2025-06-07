@@ -14,6 +14,7 @@ import { FaXmark } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 
 const header = () => {
+  const [open, setOpen] = useState(false);
   document.addEventListener("DOMContentLoaded", () => {
     const text = document.querySelector(".snd-text");
 
@@ -58,6 +59,10 @@ const header = () => {
     smallsc.style.left = "-300px";
   };
 
+  const toggleMenu = () => {
+    setOpen(!open);
+  };
+
   const Counter = ({ value }) => {
     const [count, setCount] = useState(0);
 
@@ -81,29 +86,6 @@ const header = () => {
     return <div className="counter">{count}</div>;
   };
 
-  /*function animateNumber(id, target){
-  let element = document.getElementById(id);
-  let start = 0;
-  let end = parseInt(target);
-  let duration = 2000; // Animation duration in milliseconds
-  let interval = Math.max(10, duration / end); // Adjust interval based on value
-
-  let counter = setInterval(() => {
-    start++;
-    element.textContent = start;
-     if (start >= end){
-      clearInterval(counter);
-     }
-  }, interval);
- }
-
-window.onload = () => {
-  animateNumber("experience", document.getElementById("experience").dataset.value);
-  animateNumber("Projects", document.getElementById("Projects").dataset.value);
-  animateNumber("Satisfaction", document.getElementById("Satisfaction").dataset.value);
-};
-
-*/
   return (
     <div className="nav" id="portfolio">
       <div className="dot"></div>
@@ -136,7 +118,7 @@ window.onload = () => {
 
             <div className="satisfactory">
               <div className="tory0">
-                <span class="borderline"></span>
+                <span className="borderline"></span>
                 <div className="tor1">
                   <h1 id="experience" data-value="3">
                     <Counter value={5} />+
@@ -146,7 +128,7 @@ window.onload = () => {
               </div>
 
               <div className="tory0">
-                <span class="borderline"></span>
+                <span className="borderline"></span>
                 <div className="tor1">
                   <h1 id="Projects" data-value="10">
                     <Counter value={10} />+
@@ -156,7 +138,7 @@ window.onload = () => {
               </div>
 
               <div className="tory0">
-                <span class="borderline"></span>
+                <span className="borderline"></span>
                 <div className="tor1">
                   <h1>
                     <Counter value={91} />%
@@ -167,27 +149,20 @@ window.onload = () => {
             </div>
 
             <div className="btn-box">
-              <div className="chat-me" id="chatbox">
-                <a href="https://telegram.org/dl" className="wath">
-                  <FaTelegram className="wht" />
+              <button className="smallsc" onClick={toggleMenu}>
+                Let's Talk
+              </button>
+              <div className={`radial-menu ${open ? "show" : ""}`}>
+                <a href="https://telegram.org/dl">
+                  <FaTelegram />
                 </a>
-                <a
-                  className="wath"
-                  href="https://m.me/cm/AbbiIbIGeqNXwdET/?send_source=cm%3Acopy_invite_link"
-                >
-                  <FaFacebookMessenger className="wht" />
+                <a href="https://m.me/cm/AbbiIbIGeqNXwdET/?send_source=cm%3Acopy_invite_link">
+                  <FaFacebookMessenger />
                 </a>
-                <a className="wath" href="https://whatsapp.com/dl/">
-                  <FaWhatsapp className="wht" />
-                </a>
-                <a className="xcanscle" onClick={hideSid}>
-                  <FaXmark />
+                <a href="https://whatsapp.com/dl/">
+                  <FaWhatsapp />
                 </a>
               </div>
-              <button className="smallsc" onClick={showSid}>
-                {" "}
-                Let's Talk{" "}
-              </button>
               <button className="smallsc" onClick={goToContacts}>
                 {" "}
                 Hire Me

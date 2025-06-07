@@ -29,6 +29,29 @@
   list-style: none;
 }
 
+.nav {
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  background-color: var(--BLACK--);
+}
+
+.nav .toone {
+  width: 95%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
 .nava {
   background-color: var(--BLACK--);
   height: 15vh;
@@ -408,7 +431,7 @@ select option {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: 90%;
 }
 .header .hi {
   width: 50%;
@@ -428,7 +451,6 @@ select option {
   text-align: center;
   align-items: center;
   justify-content: center;
-
   overflow: hidden;
   position: relative;
   border-top-left-radius: 2em;
@@ -490,58 +512,14 @@ svg text {
     stroke-dashoffset: -20%;
   }
 }
-/* .appir .text {
-  position: relative;
-
-  font-size: 50px;
-  font-family: var(--body-font);
-  font-weight: 600;
-}
-.appir .first-text span {
-  color: var(--AQUA--);
-  font-size: 2.3em;
-}
-
-.appir .text.first-text {
-  color: var(--GRAY--);
-  font-family: var(--body-font);
-  font-size: 1.5em;
-}
-
-.appir .text.snd-text {
-  font-size: 1.9em;
-  color: var(--AQUA--);
-}
-.text.snd-text::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--BLACK--);
-  color: blur(20px);
-  animation: animate 4s steps(12) infinite;
-  border-left: 2px solid var(--WHITE--);
-}
-@keyframes animate {
-  40%,
-  60% {
-    left: calc(100% - 4px);
-  }
-  100% {
-    left: 0%;
-  }
-} */
 
 .hi .btn-box {
   display: flex;
   position: relative;
   justify-content: center;
-
   align-items: center;
   gap: 2em;
-  width: 100%;
+  width: 80%;
   height: 20%;
 }
 
@@ -557,46 +535,6 @@ svg text {
   animation-delay: 1.9s;
   z-index: 2;
   text-decoration: none;
-}
-.btn-box .chat-me {
-  position: absolute;
-  width: 160px;
-  height: 50%;
-  background-color: var(--GRAY--);
-  z-index: 10;
-  align-items: center;
-  justify-content: center;
-  transition: 2s ease;
-  gap: 0.2em;
-  display: flex;
-  left: -250px;
-  border: 2px solid var(--AQUA--);
-  border-top-left-radius: 0em;
-  border-top-right-radius: 2em;
-  border-bottom-left-radius: 2em;
-  border-bottom-right-radius: 2em;
-}
-.chat-me .xcanscle {
-  margin-left: 0.5em;
-  font-size: 1em;
-}
-.chat-me .wath {
-  width: 25%;
-  height: 90%;
-  background-color: transparent;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-}
-.wath .wht {
-  font-size: 2em;
-  color: var(--AQUA--);
-  transition: 0.3s ease;
-}
-.wath .wht:hover {
-  font-size: 1.8em;
 }
 
 .btn-box .smallsc {
@@ -624,11 +562,52 @@ svg text {
 .btn-box .smallsc:hover {
   color: var(--AQUA--);
   border: none;
-
+  border: 2px solid var(--AQUA--);
   border-top-right-radius: 2em;
   border-bottom-left-radius: 0em;
   border-top-left-radius: 2em;
 }
+
+.btn-box .radial-menu {
+  position: absolute;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  bottom: 0px;
+  left: 35%;
+  transform: translateX(-50%) scale(0);
+  transition: transform 0.3s ease;
+  pointer-events: none;
+  z-index: 100;
+  width: 25%;
+}
+
+.radial-menu.show {
+  transform: translateX(-50%) scale(1);
+  pointer-events: all;
+}
+
+.radial-menu a {
+  font-size: 1.5em;
+  color: var(--AQUA--);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+/* Closer radial positions */
+/* .radial-menu.show a:nth-child(1) {
+  transform: translate(80px, -40px);
+}
+.radial-menu.show a:nth-child(2) {
+  transform: translate(50px, -20px);
+}
+.radial-menu.show a:nth-child(3) {
+  transform: translate(20px, -40px);
+} */
 
 .btn-box .smallsc:nth-child(2) {
   background: transparent;
@@ -664,7 +643,7 @@ svg text {
 }
 
 .header .satisfactory {
-  width: 70%;
+  width: 80%;
   height: 25%;
   display: flex;
   justify-content: space-evenly;
@@ -804,29 +783,6 @@ svg text {
   font-weight: bold;
 }
 
-.nav {
-  height: 100vh;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  background-color: var(--BLACK--);
-}
-
-.nav .toone {
-  width: 95%;
-  height: 95%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(20px);
-  background-color: rgba(255, 255, 255, 0.05);
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
 .header .imageside {
   width: 50%;
   height: 90%;
@@ -854,163 +810,6 @@ svg text {
   border-right: 0.2em solid var(--AQUA--);
 }
 
-/*
-
-
-
-
-
-
-export const Navbar = () => {
-https://x.com/Lucasaustin07?t=3h69RvXOq4URAfd_ymtMnw&s=09
-  
-  const [showMenu, setShowMenu] = useState(false);
-  const [language, setLanguage] = useState("en");
-
-  const toggleMenu = () => {
-      setShowMenu(!showMenu);
-  };
-
-   const onLanguageChange = (value) =>
-   {
-    setLanguage(value);
-    setShowMenu(false);
-   };
-
-/*
-
-handleChange, isChecked, language, onLanguageChange,
-
- let subMenu = document.getElementById("subMenu");
-
-  function toggleMenu(){
-      subMenu.classList.toggle("open-menu")
-  }
-*
-
-
-const showSidebar = () => {
-
-
-
-  const smallscr = document.querySelector ('.sidebar');
-      smallscr.style.display = 'flex';
-};
-      const hideSidebar = () => {
-       const smallscr = document.querySelector ('.sidebar');
-           smallscr.style.display = 'none';
-
-};
-
-
-
-const text = document.querySelector(".snd-text");
-
-const textLoad = () => {
-   setTimeout(() => {
-     text.textContent = 'Programmer';
-   }, 4000);
-
-   setTimeout(() => {
-     text.textContent = 'Cyber-Sec';
-   }, 8000);
-
-   setTimeout(() => {
-     text.textContent = 'Developer';
-   }, 14000); //is = 1000 milliseconds
-
-};
-
-
-textLoad();
-setInterval(textLoad, 24000);
-
-
-return (
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <FontAwesomeIcon icon={faCode} />
-  <FontAwesomeIcon icon={faXTwitter} />
-  <FontAwesomeIcon icon={faInstagram} />
-  <FontAwesomeIcon icon={faFacebookF} />
-  <FontAwesomeIcon icon={faGithub} />
-  <FontAwesomeIcon icon={faTelegram} />
-  <FontAwesomeIcon icon={faWhatsapp} />
-
-  <FontAwesomeIcon icon={faBars} />
-  <FontAwesomeIcon icon={faXmark} />
-  <FontAwesomeIcon icon={faMagnifyingGlass} />
-  <FontAwesomeIcon icon={faForward} fade />
-  <FontAwesomeIcon icon={faBackward} fade />
-  <FontAwesomeIcon icon={faLocationDot} />
-
-  <FontAwesomeIcon icon={faPython} />
-  <FontAwesomeIcon icon={faHtml5} />
-  <FontAwesomeIcon icon={faCss3Alt} />
-  <FontAwesomeIcon icon={faJs} />
-  <FontAwesomeIcon icon={faReact} />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-   {/*}   <div className='guage'>
-        <label htmlFor="language">lang:</label>
-        <select 
-        id="language"
-        value={language}
-        onChange={(e) => onLanguageChange(e. target.value)}
-        >
-          <option value="en">English</option>
-          <option value="fr">FranCais</option>
-          <option value="es">Espaniol</option>
-          <option value="de">Deutsch</option>
-        </select>
-      </div>*
-
-      <button className='translateing1' onClick={toggleMenu} aria-expanded={showMenu}> <IoLanguageSharp className='translateing'/> </button>
-
-      {showMenu && (   
-           <div className="sub-menu-warp" >
-            <div className="sub-menu"  id="language">
-   
-                <button className="eng" onClick={() => onLanguageChange("en")}>English</button>
-                <button className="fra" onClick={() => onLanguageChange("fr")}>FranCais</button>
-                <button className="espe" onClick={() => onLanguageChange("es")}>Espaniol</button>
-                <button className="deut" onClick={() => onLanguageChange("de")}>Deutsch</button>
-             </div>
-         </div>
-      )}
-   
-   
-*/
 .imgcontainer .social {
   width: 25%;
 
@@ -1203,7 +1002,7 @@ return (
   }
 
   .nav {
-    height: 130vh;
+    height: 900px;
     justify-content: center;
   }
   .nav .toone {
@@ -1215,12 +1014,13 @@ return (
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    height: 90%;
+    height: 95%;
   }
   .header .hi {
     width: 100%;
     height: 60%;
     padding: 0 0 0 0;
+    justify-content: space-around;
     gap: 0;
   }
   .hi .appir {
@@ -1264,16 +1064,12 @@ return (
     justify-content: center;
     align-items: center;
     margin-top: 1em;
-    background-color: transparent;
   }
   .btn-box .smallsc {
     border-top-left-radius: 0em;
     border-top-right-radius: 2em;
-  }
-
-  .btn-box .smallsc {
     width: 40%;
-    height: 40%;
+    height: 40px;
     font-size: 0.8em;
   }
 
@@ -1292,6 +1088,19 @@ return (
     font-size: 1.6em;
   }
 
+  .btn-box .radial-menu {
+    flex-direction: unset;
+    bottom: 0px;
+    height: 20%;
+    left: 25%;
+
+    width: 40%;
+  }
+
+  .radial-menu a {
+    font-size: 1.3em;
+  }
+
   .header .satisfactory {
     align-items: center;
     justify-content: center;
@@ -1303,7 +1112,7 @@ return (
 
   .satisfactory .tory0 {
     height: 70%;
-    width: 20%;
+    width: 25%;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 0px;
@@ -1375,8 +1184,7 @@ return (
 
 @media (min-width: 341px) and (max-width: 500px) {
   .nav {
-    height: 120vh;
-    justify-content: last baseline;
+    height: 900px;
   }
   .nav .toone {
     height: 95%;
@@ -1458,6 +1266,7 @@ return (
   .header .hi {
     width: 100%;
     height: 60%;
+    justify-content: space-around;
     padding: 0 0 0 0;
     gap: 0;
   }
@@ -1501,7 +1310,6 @@ return (
     justify-self: center;
     justify-content: center;
     align-items: center;
-    margin-top: 1em;
   }
   .btn-box .smallsc {
     width: 40%;
@@ -1528,17 +1336,31 @@ return (
     font-size: 1.6em;
   }
 
+  .btn-box .radial-menu {
+    flex-direction: unset;
+    bottom: 0px;
+    height: 20%;
+    left: 25%;
+
+    width: 40%;
+  }
+
+  .radial-menu a {
+    font-size: 1.3em;
+  }
+
   .header .satisfactory {
     align-items: center;
     justify-content: center;
     gap: 1em;
+    width: 90%;
     height: 25%;
     text-align: center;
   }
 
   .satisfactory .tory0 {
-    height: 70%;
-    width: 33%;
+    height: 80%;
+    width: 30%;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 0px;
@@ -1642,7 +1464,7 @@ return (
   }
 
   .nav {
-    min-height: 150vh;
+    height: 900px;
   }
   .nav .toone {
     height: 95%;
@@ -1656,7 +1478,7 @@ return (
     align-items: center;
 
     padding: 0 0em;
-    height: 100%;
+    height: 95%;
   }
   .header .hi {
     width: 100%;
@@ -1697,8 +1519,9 @@ return (
   }
   .hi .btn-box {
     height: 25%;
-
+    width: 80%;
     justify-content: center;
+    position: relative;
     align-items: center;
     padding: 0 0 0 0;
     margin-top: 0em;
@@ -1716,6 +1539,18 @@ return (
     border-bottom-right-radius: 0.5em;
   }
   .wath .wht {
+    font-size: 1.6em;
+  }
+
+  .btn-box .radial-menu {
+    bottom: 0px;
+    height: auto;
+
+    gap: 1em;
+    width: 20%;
+  }
+
+  .radial-menu a {
     font-size: 1.6em;
   }
 
@@ -1782,13 +1617,11 @@ return (
 
 @media (min-width: 999px) and (max-width: 1517px) {
   .nav {
-    height: 100vh;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    height: 900px;
+  }
+
+  .nav .toone {
+    height: 95%;
   }
 
   .hi .appir {
@@ -1824,7 +1657,7 @@ return (
   }
   .hi .btn-box {
     height: 25%;
-    width: 90%;
+    width: 80%;
   }
   .appir .first-text span {
     color: var(--AQUA--);
@@ -1858,10 +1691,10 @@ return (
   .header .satisfactory {
     height: 25%;
     gap: 1.5em;
-    width: 100%;
+    width: 80%;
   }
   .satisfactory .tory0 {
     border: none;
-    width: 22%;
+    width: 20%;
   }
 }
