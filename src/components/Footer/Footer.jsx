@@ -130,10 +130,24 @@ export const Footer = ({ language }) => {
 
   const [email, setEmail] = useState("");
 
+  // const handelSubmit = () => {
+  //   if (email) {
+  //     localStorage.setItem("SubscribedEmail", email);
+  //     alert("Thank you for subscribing!");
+  //     setEmail("");
+  //   } else {
+  //     alert("Please enter a valid email");
+  //   }
+  // };
+
   const handelSubmit = () => {
     if (email) {
       localStorage.setItem("SubscribedEmail", email);
       alert("Thank you for subscribing!");
+
+      // Redirect to YouTube after saving
+      window.open("https://www.youtube.com/@DestinMarvel", "_blank");
+
       setEmail("");
     } else {
       alert("Please enter a valid email");
@@ -153,7 +167,7 @@ export const Footer = ({ language }) => {
               <h1> {t.logo}</h1>
             </div>
 
-            <div className="surcrib">
+            {/* <div className="surcrib">
               <h2>{t.subscribeTitle}</h2>
 
               <input
@@ -170,15 +184,26 @@ export const Footer = ({ language }) => {
                   {t.subscribeButton}
                 </a>
               </button>
+            </div> */}
+
+            <div className="surcrib">
+              <h2>{t.subscribeTitle}</h2>
+
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+
+              <button onClick={handelSubmit}>{t.subscribeButton}</button>
             </div>
           </div>
 
           <div className="insidefot2">
             <h1>{t.information}</h1>
             <a onClick={() => handleOpenContent("About Us")}>{t.aboutUs}</a>
-            {/*    <a onClick={() => handleOpenContent("Pricing")}>{t.pricing}</a>
-            <a onClick={() => handleOpenContent("Community")}>{t.community}</a>
-            <a onClick={() => handleOpenContent("Blog")}>{t.blog}</a> */}
             <a onClick={() => handleOpenContent("Support")}>{t.support}</a>
           </div>
 
