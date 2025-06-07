@@ -1585,9 +1585,10 @@
   .insidefot .insidefot4 {
     width: 90%;
     height: 30%;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 1em;
+
+    padding: 0px;
   }
   .insidefot4 .contact {
     justify-content: center;

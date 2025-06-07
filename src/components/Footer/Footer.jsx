@@ -237,7 +237,7 @@ export const Footer = ({ language }) => {
               </a>
               <a href="#">
                 {" "}
-                <p> destinmarvel3@gamil.com</p>
+                <p> destinmarvel3@gmail.com</p>
               </a>
             </div>
 
