@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import "./contacts.css";
@@ -86,8 +86,8 @@ const mapContainerStyle = {
 };
 
 const center = {
-  lat: 37.7749,
-  lan: -122.4194,
+  lat: 5.1284495,
+  lng: 7.3866013,
 };
 
 export const Contacts = ({ language }) => {
@@ -100,13 +100,11 @@ export const Contacts = ({ language }) => {
     e.preventDefault();
 
     const name = form.current.user_name.value.trim();
-
     const email = form.current.user_email.value.trim();
-
     const message = form.current.message.value.trim();
 
     if (!name || !email || !message) {
-      setStatus("please fill in all fields.");
+      setStatus("Please fill in all fields.");
       return;
     }
 
@@ -114,19 +112,17 @@ export const Contacts = ({ language }) => {
       .sendForm("service_xe6ne6f", "template_dl25tww", form.current, {
         publicKey: "c9hATMXju3zFChhnb",
       })
-      .then(
-        (result) => {
-          setStatus("SUCCESS! Message Sent").style.color = "green";
-        },
-        (error) => {
-          setStatus("FAILED... No network check your connections").style.color =
-            "red";
-        }
-      );
+      .then(() => {
+        setStatus("SUCCESS! Message Sent");
+        form.current.reset();
 
-    document.getElementById("username").value = "";
-    document.getElementById("useremail").value = "";
-    document.getElementById("message").value = "";
+        setTimeout(() => setStatus(""), 5000);
+      })
+      .catch(() => {
+        setStatus("FAILED... Check your internet connection");
+
+        setTimeout(() => setStatus(""), 5000);
+      });
   };
 
   return (
@@ -186,41 +182,41 @@ export const Contacts = ({ language }) => {
         </div>
 
         <div className="informs">
-          <form ref={form} onSubmit={sendEmail}>
-            <label>{c.label1}</label>
+          <form ref={form} onSubmit={sendEmail} className="contact-form">
+            <label htmlFor="username">Name</label>
             <input
               className="name"
               type="text"
-              id="username"
               name="user_name"
-              placeholder={c.placeholder}
+              id="username"
+              placeholder="Your Name"
               required
             />
 
-            <label>{c.label2}</label>
+            <label htmlFor="useremail">Email</label>
             <input
-              className="email"
               type="email"
-              id="useremail"
+              className="email"
               name="user_email"
-              placeholder={c.placeholder0}
+              id="useremail"
+              placeholder="Your Email"
               required
             />
 
-            <label>{c.label3}</label>
+            <label htmlFor="message">Message</label>
             <textarea
               name="message"
               id="message"
-              placeholder={c.placeholder1}
+              placeholder="Write your message..."
               required
             />
 
-            <input className="message" type="submit" value={c.value} />
+            <input className="message" type="submit" value="Send Message" />
 
             {status && (
               <p
                 className={`status ${
-                  status.includes("successfully") ? "success" : "error"
+                  status.toLowerCase().includes("success") ? "success" : "error"
                 }`}
               >
                 {status}
@@ -259,9 +255,9 @@ export const Contacts = ({ language }) => {
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15895.385170900116!2d7.3866013!3d5.1284495!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10429939ea6214b5%3A0xa991cd2fbdbaef96!2sJenga%20Tech%20Institute!5e0!3m2!1sen!2sng!4v1738105527916!5m2!1sen!2sng"
           width="100%"
           height="400px"
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
     </div>
